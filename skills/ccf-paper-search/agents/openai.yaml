@@ -1,0 +1,4 @@
+interface:
+  display_name: "CCF Paper Search"
+  short_description: "Query and semantically filter CCF A/B papers"
+  default_prompt: "Use $ccf-paper-search to find and semantically filter CCF A/B papers for my topic."

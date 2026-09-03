@@ -1,0 +1,6 @@
+papers.db
+papers.db-shm
+papers.db-wal
+__pycache__/
+results/*.jsonl
+results/*.partial

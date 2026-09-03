@@ -1,0 +1,5806 @@
+{
+  "schema_version": 2,
+  "ccf_catalog_version": 2026,
+  "source": "https://www.ccf.org.cn/Academic_Evaluation/By_category/",
+  "source_snapshot": "https://www.ccf.org.cn/ccf/contentcore/resource/download?ID=112CF3BF7E1140ACEB271ADAED12A67ADFABB8FF099E40C2759502A85C8A281F",
+  "categories": [
+    {
+      "code": "DS",
+      "name": "Computer Architecture / Parallel and Distributed Computing / Storage Systems"
+    },
+    {
+      "code": "NW",
+      "name": "Computer Networks"
+    },
+    {
+      "code": "SC",
+      "name": "Network and Information Security"
+    },
+    {
+      "code": "SE",
+      "name": "Software Engineering / System Software / Programming Languages"
+    },
+    {
+      "code": "DB",
+      "name": "Database / Data Mining / Information Retrieval"
+    },
+    {
+      "code": "CT",
+      "name": "Theoretical Computer Science"
+    },
+    {
+      "code": "CG",
+      "name": "Computer Graphics and Multimedia"
+    },
+    {
+      "code": "AI",
+      "name": "Artificial Intelligence"
+    },
+    {
+      "code": "HI",
+      "name": "Human-Computer Interaction and Ubiquitous Computing"
+    },
+    {
+      "code": "MX",
+      "name": "Interdisciplinary / Comprehensive / Emerging"
+    }
+  ],
+  "venues": [
+    {
+      "id": "conference/aaai",
+      "type": "conference",
+      "short_name": "AAAI",
+      "name": "AAAI Conference on Artificial Intelligence",
+      "dblp_key": "aaai",
+      "dblp_keys": [
+        "aaai"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/aaai/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/acl",
+      "type": "conference",
+      "short_name": "ACL",
+      "name": "Annual Meeting of the Association for Computational Linguistics",
+      "dblp_key": "acl",
+      "dblp_keys": [
+        "acl"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/acl/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/acsac",
+      "type": "conference",
+      "short_name": "ACSAC",
+      "name": "Annual Computer Security Applications Conference",
+      "dblp_key": "acsac",
+      "dblp_keys": [
+        "acsac"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/acsac/index.html",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/asiacrypt",
+      "type": "conference",
+      "short_name": "ASIACRYPT",
+      "name": "International Conference on the Theory and Application of Cryptology and Information Security",
+      "dblp_key": "asiacrypt",
+      "dblp_keys": [
+        "asiacrypt"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/asiacrypt/index.html",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/asplos",
+      "type": "conference",
+      "short_name": "ASPLOS",
+      "name": "International Conference on Architectural Support for Programming Languages and Operating Systems",
+      "dblp_key": "asplos",
+      "dblp_keys": [
+        "asplos"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/asplos/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/bibm",
+      "type": "conference",
+      "short_name": "BIBM",
+      "name": "IEEE International Conference on Bioinformatics and Biomedicine",
+      "dblp_key": "bibm",
+      "dblp_keys": [
+        "bibm"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/bibm/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/cade",
+      "type": "conference",
+      "short_name": "CADE",
+      "name": "The Conference on Automated Deduction",
+      "dblp_key": "cade",
+      "dblp_keys": [
+        "cade"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/cade/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/caise",
+      "type": "conference",
+      "short_name": "CAiSE",
+      "name": "International Conference on Advanced Information Systems Engineering",
+      "dblp_key": "caise",
+      "dblp_keys": [
+        "caise"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/caise/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/cav",
+      "type": "conference",
+      "short_name": "CAV",
+      "name": "International Conference on Computer-Aided Verification",
+      "dblp_key": "cav",
+      "dblp_keys": [
+        "cav"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/cav/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/cc",
+      "type": "conference",
+      "short_name": "CC",
+      "name": "International Conference on Compiler Construction",
+      "dblp_key": "cc",
+      "dblp_keys": [
+        "cc"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/cc/index.html",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/ccs",
+      "type": "conference",
+      "short_name": "CCS",
+      "name": "ACM Conference on Computer and Communications Security",
+      "dblp_key": "ccs",
+      "dblp_keys": [
+        "ccs"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/ccs/",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/cgo",
+      "type": "conference",
+      "short_name": "IEEE/ACM CGO",
+      "name": "The International Symposium on Code Generation and Optimization",
+      "dblp_key": "cgo",
+      "dblp_keys": [
+        "cgo"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/cgo/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/ches",
+      "type": "conference",
+      "short_name": "CHES",
+      "name": "International Conference on Cryptographic Hardware and Embedded Systems",
+      "dblp_key": "ches",
+      "dblp_keys": [
+        "ches"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/ches/index.html",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/chi",
+      "type": "conference",
+      "short_name": "CHI",
+      "name": "ACM Conference on Human Factors in Computing Systems",
+      "dblp_key": "chi",
+      "dblp_keys": [
+        "chi"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/chi",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/cidr",
+      "type": "conference",
+      "short_name": "CIDR",
+      "name": "International Conference on Innovative Data Systems Research",
+      "dblp_key": "cidr",
+      "dblp_keys": [
+        "cidr"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/cidr/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/cikm",
+      "type": "conference",
+      "short_name": "CIKM",
+      "name": "ACM International Conference on Information and Knowledge Management",
+      "dblp_key": "cikm",
+      "dblp_keys": [
+        "cikm"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/cikm/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/cloud",
+      "type": "conference",
+      "short_name": "SoCC",
+      "name": "ACM Symposium on Cloud Computing",
+      "dblp_key": "cloud",
+      "dblp_keys": [
+        "cloud"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/cloud/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/cluster",
+      "type": "conference",
+      "short_name": "CLUSTER",
+      "name": "IEEE International Conference on Cluster Computing",
+      "dblp_key": "cluster",
+      "dblp_keys": [
+        "cluster"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/cluster/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/coco",
+      "type": "conference",
+      "short_name": "CCC",
+      "name": "Conference on Computational Complexity",
+      "dblp_key": "coco",
+      "dblp_keys": [
+        "coco"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/coco/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/cocoon",
+      "type": "conference",
+      "short_name": "COCOON",
+      "name": "International Computing and Combinatorics Conference",
+      "dblp_key": "cocoon",
+      "dblp_keys": [
+        "cocoon"
+      ],
+      "url": "https://dblp.org/db/conf/cocoon/index.html",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/codes",
+      "type": "conference",
+      "short_name": "CODES+ISSS",
+      "name": "International Conference on Hardware/Software Co-design and System Synthesis",
+      "dblp_key": "codes",
+      "dblp_keys": [
+        "codes",
+        "codesisss"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/codesisss/index.html",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/cogsci",
+      "type": "conference",
+      "short_name": "CogSci",
+      "name": "Annual Meeting of the Cognitive Science Society",
+      "dblp_key": "cogsci",
+      "dblp_keys": [
+        "cogsci"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/cogsci/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/coling",
+      "type": "conference",
+      "short_name": "COLING",
+      "name": "INTERNATIONNAL CONFERENCE ON COMPUTATIONAL LINGUISTICS",
+      "dblp_key": "coling",
+      "dblp_keys": [
+        "coling"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/coling/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/colt",
+      "type": "conference",
+      "short_name": "COLT",
+      "name": "Annual Conference on Learning Theory",
+      "dblp_key": "colt",
+      "dblp_keys": [
+        "colt"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/colt/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/compgeom",
+      "type": "conference",
+      "short_name": "SOCG",
+      "name": "International Symposium on Computational Geometry",
+      "dblp_key": "compgeom",
+      "dblp_keys": [
+        "compgeom"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/compgeom/index.html",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/concur",
+      "type": "conference",
+      "short_name": "CONCUR",
+      "name": "International Conference on Concurrency Theory",
+      "dblp_key": "concur",
+      "dblp_keys": [
+        "concur"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/concur/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/conext",
+      "type": "conference",
+      "short_name": "CoNEXT",
+      "name": "International Conference on Emerging Networking Experiments and Technologies",
+      "dblp_key": "conext",
+      "dblp_keys": [
+        "conext"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/conext/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/cp",
+      "type": "conference",
+      "short_name": "CP",
+      "name": "International Conference on Principles and Practice of Constraint Programming",
+      "dblp_key": "cp",
+      "dblp_keys": [
+        "cp"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/cp/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/crypto",
+      "type": "conference",
+      "short_name": "CRYPTO",
+      "name": "International Cryptology Conference",
+      "dblp_key": "crypto",
+      "dblp_keys": [
+        "crypto"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/crypto/",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/cscw",
+      "type": "conference",
+      "short_name": "CSCW",
+      "name": "ACM Conference on Computer Supported Cooperative Work and Social Computing",
+      "dblp_key": "cscw",
+      "dblp_keys": [
+        "cscw"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/cscw",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/csfw",
+      "type": "conference",
+      "short_name": "CSFW",
+      "name": "IEEE Computer Security Foundations Symposium",
+      "dblp_key": "csfw",
+      "dblp_keys": [
+        "csfw"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/csfw/index.html",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/cvpr",
+      "type": "conference",
+      "short_name": "CVPR",
+      "name": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+      "dblp_key": "cvpr",
+      "dblp_keys": [
+        "cvpr"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/cvpr/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/dac",
+      "type": "conference",
+      "short_name": "DAC",
+      "name": "Design Automation Conference",
+      "dblp_key": "dac",
+      "dblp_keys": [
+        "dac"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/dac/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/dasfaa",
+      "type": "conference",
+      "short_name": "DASFAA",
+      "name": "Database Systems for Advanced Applications",
+      "dblp_key": "dasfaa",
+      "dblp_keys": [
+        "dasfaa"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/dasfaa/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/date",
+      "type": "conference",
+      "short_name": "DATE",
+      "name": "Design, Automation & Test in Europe",
+      "dblp_key": "date",
+      "dblp_keys": [
+        "date"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/date/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/dcc",
+      "type": "conference",
+      "short_name": "DCC",
+      "name": "Data Compression Conference",
+      "dblp_key": "dcc",
+      "dblp_keys": [
+        "dcc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/dcc/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/dsn",
+      "type": "conference",
+      "short_name": "DSN",
+      "name": "International Conference on Dependable Systems and Networks",
+      "dblp_key": "dsn",
+      "dblp_keys": [
+        "dsn"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/dsn/index.html",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/ecai",
+      "type": "conference",
+      "short_name": "ECAI",
+      "name": "European Conference on Artificial Intelligence",
+      "dblp_key": "ecai",
+      "dblp_keys": [
+        "ecai"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/ecai/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/eccv",
+      "type": "conference",
+      "short_name": "ECCV",
+      "name": "European Conference on Computer Vision",
+      "dblp_key": "eccv",
+      "dblp_keys": [
+        "eccv"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/eccv/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/ecoop",
+      "type": "conference",
+      "short_name": "ECOOP",
+      "name": "European Conference on Object-Oriented Programming",
+      "dblp_key": "ecoop",
+      "dblp_keys": [
+        "ecoop"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/ecoop/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/ecscw",
+      "type": "conference",
+      "short_name": "ECSCW",
+      "name": "European Conference on Computer Supported Cooperative Work",
+      "dblp_key": "ecscw",
+      "dblp_keys": [
+        "ecscw"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/ecscw/",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/edbt",
+      "type": "conference",
+      "short_name": "EDBT",
+      "name": "International Conference on Extending Database Technology",
+      "dblp_key": "edbt",
+      "dblp_keys": [
+        "edbt"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/edbt/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/emnlp",
+      "type": "conference",
+      "short_name": "EMNLP",
+      "name": "The annual Conference on Empirical Methods in Natural Language Processing",
+      "dblp_key": "emnlp",
+      "dblp_keys": [
+        "emnlp"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/emnlp/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/emsoft",
+      "type": "conference",
+      "short_name": "EMSOFT",
+      "name": "International Conference on Embedded Software",
+      "dblp_key": "emsoft",
+      "dblp_keys": [
+        "emsoft"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/emsoft/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/esa",
+      "type": "conference",
+      "short_name": "ESA",
+      "name": "European Symposium on Algorithms",
+      "dblp_key": "esa",
+      "dblp_keys": [
+        "esa"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/esa/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/esem",
+      "type": "conference",
+      "short_name": "ESEM",
+      "name": "International Symposium on Empirical Software Engineering and Measurement",
+      "dblp_key": "esem",
+      "dblp_keys": [
+        "esem"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/esem/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/esorics",
+      "type": "conference",
+      "short_name": "ESORICS",
+      "name": "European Symposium on Research in Computer Security",
+      "dblp_key": "esorics",
+      "dblp_keys": [
+        "esorics"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/esorics/index.html",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/etaps",
+      "type": "conference",
+      "short_name": "ETAPS",
+      "name": "European Joint Conferences on Theory and Practice of Software",
+      "dblp_key": "etaps",
+      "dblp_keys": [
+        "etaps"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/etaps/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/eurocrypt",
+      "type": "conference",
+      "short_name": "EUROCRYPT",
+      "name": "European Cryptology Conference",
+      "dblp_key": "eurocrypt",
+      "dblp_keys": [
+        "eurocrypt"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/eurocrypt/",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/eurographics",
+      "type": "conference",
+      "short_name": "Eurographics",
+      "name": "Eurographics",
+      "dblp_key": "eurographics",
+      "dblp_keys": [
+        "eurographics"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/eurographics/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/europar",
+      "type": "conference",
+      "short_name": "Euro-Par",
+      "name": "European Conference on Parallel and Distributed Computing",
+      "dblp_key": "europar",
+      "dblp_keys": [
+        "europar"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/europar/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/eurosys",
+      "type": "conference",
+      "short_name": "EuroSys",
+      "name": "European Conference on Computer Systems",
+      "dblp_key": "eurosys",
+      "dblp_keys": [
+        "eurosys"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/eurosys/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/fast",
+      "type": "conference",
+      "short_name": "FAST",
+      "name": "USENIX Conference on File and Storage Technologies",
+      "dblp_key": "fast",
+      "dblp_keys": [
+        "fast"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/fast/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/fm",
+      "type": "conference",
+      "short_name": "FM",
+      "name": "International Symposium on Formal Methods",
+      "dblp_key": "fm",
+      "dblp_keys": [
+        "fm"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/fm/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/fmcad",
+      "type": "conference",
+      "short_name": "FMCAD",
+      "name": "Formal Methods in Computer-Aided Design",
+      "dblp_key": "fmcad",
+      "dblp_keys": [
+        "fmcad"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/fmcad/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/focs",
+      "type": "conference",
+      "short_name": "FOCS",
+      "name": "IEEE Symposium on Foundations of Computer Science",
+      "dblp_key": "focs",
+      "dblp_keys": [
+        "focs"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/focs/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/fpga",
+      "type": "conference",
+      "short_name": "FPGA",
+      "name": "ACM/SIGDA International Symposium on Field-Programmable Gate Arrays",
+      "dblp_key": "fpga",
+      "dblp_keys": [
+        "fpga"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/fpga/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/fse",
+      "type": "conference",
+      "short_name": "FSE",
+      "name": "Fast Software Encryption",
+      "dblp_key": "fse",
+      "dblp_keys": [
+        "fse"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/fse/index.html",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/group",
+      "type": "conference",
+      "short_name": "GROUP",
+      "name": "ACM International Conference on Supporting Group Work",
+      "dblp_key": "group",
+      "dblp_keys": [
+        "group"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/group/",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/hipeac",
+      "type": "conference",
+      "short_name": "HiPEAC",
+      "name": "International Conference on High Performance and Embedded Architectures and Compilers",
+      "dblp_key": "hipeac",
+      "dblp_keys": [
+        "hipeac"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/hipeac/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/hotchips",
+      "type": "conference",
+      "short_name": "Hot Chips",
+      "name": "Hot Chips: A Symposium on High Performance Chips",
+      "dblp_key": "hotchips",
+      "dblp_keys": [
+        "hotchips"
+      ],
+      "url": "https://dblp.org/db/conf/hotchips/index.html",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/hotos",
+      "type": "conference",
+      "short_name": "HotOS",
+      "name": "USENIX Workshop on Hot Topics in Operating Systems",
+      "dblp_key": "hotos",
+      "dblp_keys": [
+        "hotos"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/hotos/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/hpca",
+      "type": "conference",
+      "short_name": "HPCA",
+      "name": "IEEE International Symposium on High-Performance Computer Architecture",
+      "dblp_key": "hpca",
+      "dblp_keys": [
+        "hpca"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/hpca/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/hpdc",
+      "type": "conference",
+      "short_name": "HPDC",
+      "name": "ACM Symposium on High-Performance Parallel and Distributed Computing",
+      "dblp_key": "hpdc",
+      "dblp_keys": [
+        "hpdc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/hpdc/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/huc",
+      "type": "conference",
+      "short_name": "UbiComp/ISWC",
+      "name": "ACM International Joint Conference on Pervasive and Ubiquitous Computing",
+      "dblp_key": "huc",
+      "dblp_keys": [
+        "huc"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/huc/",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/hybrid",
+      "type": "conference",
+      "short_name": "HSCC",
+      "name": "International Conference on Hybrid Systems: Computation and Control",
+      "dblp_key": "hybrid",
+      "dblp_keys": [
+        "hybrid"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/hybrid/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/icalp",
+      "type": "conference",
+      "short_name": "ICALP",
+      "name": "EATCS International Colloquium on Automata, Languages, and Programming",
+      "dblp_key": "icalp",
+      "dblp_keys": [
+        "icalp"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/icalp/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/icaps",
+      "type": "conference",
+      "short_name": "ICAPS",
+      "name": "International Conference on Automated Planning and Scheduling",
+      "dblp_key": "icaps",
+      "dblp_keys": [
+        "icaps"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/icaps/index.html",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/icassp",
+      "type": "conference",
+      "short_name": "ICASSP",
+      "name": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+      "dblp_key": "icassp",
+      "dblp_keys": [
+        "icassp"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/icassp/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/iccad",
+      "type": "conference",
+      "short_name": "ICCAD",
+      "name": "IEEE/ACM International Conference on Computer-Aided Design",
+      "dblp_key": "iccad",
+      "dblp_keys": [
+        "iccad"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/iccad/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/iccbr",
+      "type": "conference",
+      "short_name": "ICCBR",
+      "name": "International Conference on Case-Based Reasoning",
+      "dblp_key": "iccbr",
+      "dblp_keys": [
+        "iccbr"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/iccbr/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/iccd",
+      "type": "conference",
+      "short_name": "ICCD",
+      "name": "International Conference on Computer Design",
+      "dblp_key": "iccd",
+      "dblp_keys": [
+        "iccd"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/iccd/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/iccv",
+      "type": "conference",
+      "short_name": "ICCV",
+      "name": "IEEE International Conference on Computer Vision",
+      "dblp_key": "iccv",
+      "dblp_keys": [
+        "iccv"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/iccv/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/icdcs",
+      "type": "conference",
+      "short_name": "ICDCS",
+      "name": "IEEE International Conference on Distributed Computing Systems",
+      "dblp_key": "icdcs",
+      "dblp_keys": [
+        "icdcs"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/icdcs/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/icde",
+      "type": "conference",
+      "short_name": "ICDE",
+      "name": "IEEE International Conference on Data Engineering",
+      "dblp_key": "icde",
+      "dblp_keys": [
+        "icde"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/icde/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/icdm",
+      "type": "conference",
+      "short_name": "ICDM",
+      "name": "IEEE International Conference on Data Mining",
+      "dblp_key": "icdm",
+      "dblp_keys": [
+        "icdm"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/icdm/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/icdt",
+      "type": "conference",
+      "short_name": "ICDT",
+      "name": "International Conference on Database Theory",
+      "dblp_key": "icdt",
+      "dblp_keys": [
+        "icdt"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/icdt/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/icfp",
+      "type": "conference",
+      "short_name": "ICFP",
+      "name": "International Conference on Function Programming",
+      "dblp_key": "icfp",
+      "dblp_keys": [
+        "icfp"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/icfp/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/iclr",
+      "type": "conference",
+      "short_name": "ICLR",
+      "name": "International Conference on Learning Representations",
+      "dblp_key": "iclr",
+      "dblp_keys": [
+        "iclr"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/iclr/index.html",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/icme",
+      "type": "conference",
+      "short_name": "ICME",
+      "name": "The IEEE International Conference on Multimedia & Expo",
+      "dblp_key": "icme",
+      "dblp_keys": [
+        "icme",
+        "icmcs"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/icmcs/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/icml",
+      "type": "conference",
+      "short_name": "ICML",
+      "name": "International Conference on Machine Learning",
+      "dblp_key": "icml",
+      "dblp_keys": [
+        "icml"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/icml/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/icnp",
+      "type": "conference",
+      "short_name": "ICNP",
+      "name": "IEEE International Conference on Network Protocols",
+      "dblp_key": "icnp",
+      "dblp_keys": [
+        "icnp"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/icnp/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/icpc",
+      "type": "conference",
+      "short_name": "ICPC",
+      "name": "IEEE International Conference on Program Comprehension",
+      "dblp_key": "icpc",
+      "dblp_keys": [
+        "icpc",
+        "iwpc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/iwpc/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/icpp",
+      "type": "conference",
+      "short_name": "ICPP",
+      "name": "International Conference on Parallel Processing",
+      "dblp_key": "icpp",
+      "dblp_keys": [
+        "icpp"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/icpp/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/icra",
+      "type": "conference",
+      "short_name": "ICRA",
+      "name": "IEEE International Conference on Robotics and Automation",
+      "dblp_key": "icra",
+      "dblp_keys": [
+        "icra"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/icra/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/ics",
+      "type": "conference",
+      "short_name": "ICS",
+      "name": "ACM International Conference on Supercomputing",
+      "dblp_key": "ics",
+      "dblp_keys": [
+        "ics"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/ics/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/icse",
+      "type": "conference",
+      "short_name": "ICSE",
+      "name": "International Conference on Software Engineering",
+      "dblp_key": "icse",
+      "dblp_keys": [
+        "icse"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/icse/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/icsm",
+      "type": "conference",
+      "short_name": "ICSME",
+      "name": "International Conference on Software Maintenance and Evolution",
+      "dblp_key": "icsm",
+      "dblp_keys": [
+        "icsm"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/icsm/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/icsoc",
+      "type": "conference",
+      "short_name": "ICSOC",
+      "name": "International Conference on Service Oriented Computing",
+      "dblp_key": "icsoc",
+      "dblp_keys": [
+        "icsoc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/icsoc/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/icws",
+      "type": "conference",
+      "short_name": "ICWS",
+      "name": "IEEE International Conference on Web Services (Research Track)",
+      "dblp_key": "icws",
+      "dblp_keys": [
+        "icws"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/icws/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/icwsm",
+      "type": "conference",
+      "short_name": "ICWSM",
+      "name": "The International AAAI Conference on Web and Social Media",
+      "dblp_key": "icwsm",
+      "dblp_keys": [
+        "icwsm"
+      ],
+      "url": "https://dblp.org/db/conf/icwsm/index.html",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/ifaamas",
+      "type": "conference",
+      "short_name": "AAMAS",
+      "name": "International Conference on Autonomous Agents and Multiagent Systems",
+      "dblp_key": "ifaamas",
+      "dblp_keys": [
+        "ifaamas"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/ifaamas/index.html",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/ijcai",
+      "type": "conference",
+      "short_name": "IJCAI",
+      "name": "International Joint Conference on Artificial Intelligence",
+      "dblp_key": "ijcai",
+      "dblp_keys": [
+        "ijcai"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/ijcai/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/imc",
+      "type": "conference",
+      "short_name": "IMC",
+      "name": "ACM Internet Measurement Conference",
+      "dblp_key": "imc",
+      "dblp_keys": [
+        "imc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/imc/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/infocom",
+      "type": "conference",
+      "short_name": "INFOCOM",
+      "name": "IEEE International Conference on Computer Communications",
+      "dblp_key": "infocom",
+      "dblp_keys": [
+        "infocom"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/infocom/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/interspeech",
+      "type": "conference",
+      "short_name": "InterSpeech",
+      "name": "Conference of the International Speech Communication Association",
+      "dblp_key": "interspeech",
+      "dblp_keys": [
+        "interspeech"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/interspeech/index.html",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/ipps",
+      "type": "conference",
+      "short_name": "IPDPS",
+      "name": "IEEE International Parallel and Distributed Processing Symposium",
+      "dblp_key": "ipps",
+      "dblp_keys": [
+        "ipps"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/ipps/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/ipsn",
+      "type": "conference",
+      "short_name": "IPSN",
+      "name": "ACM/IEEE International Conference on Information Processing in Sensor Networks",
+      "dblp_key": "ipsn",
+      "dblp_keys": [
+        "ipsn"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/ipsn/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/isca",
+      "type": "conference",
+      "short_name": "ISCA",
+      "name": "International Symposium on Computer Architecture",
+      "dblp_key": "isca",
+      "dblp_keys": [
+        "isca"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/isca/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/iscas",
+      "type": "conference",
+      "short_name": "ISCAS",
+      "name": "IEEE International Symposium on Circuits and Systems",
+      "dblp_key": "iscas",
+      "dblp_keys": [
+        "iscas"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/iscas/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/ismar",
+      "type": "conference",
+      "short_name": "ISMAR",
+      "name": "International Symposium on Mixed and Augmented Reality",
+      "dblp_key": "ismar",
+      "dblp_keys": [
+        "ismar"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/ismar/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/ismb",
+      "type": "conference",
+      "short_name": "ISMB",
+      "name": "International Conference on Intelligent Systems for Molecular Biology",
+      "dblp_key": "ismb",
+      "dblp_keys": [
+        "ismb"
+      ],
+      "url": "https://dblp.org/db/conf/ismb/index.html",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/issre",
+      "type": "conference",
+      "short_name": "ISSRE",
+      "name": "International Symposium on Software Reliability Engineering",
+      "dblp_key": "issre",
+      "dblp_keys": [
+        "issre"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/issre/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/issta",
+      "type": "conference",
+      "short_name": "ISSTA",
+      "name": "ACM SIGSOFT International Symposium on Software Testing and Analysis",
+      "dblp_key": "issta",
+      "dblp_keys": [
+        "issta"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/issta/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/itc",
+      "type": "conference",
+      "short_name": "ITC",
+      "name": "International Test Conference",
+      "dblp_key": "itc",
+      "dblp_keys": [
+        "itc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/itc/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/iui",
+      "type": "conference",
+      "short_name": "IUI",
+      "name": "ACM Conference on Intelligent User Interfaces",
+      "dblp_key": "iui",
+      "dblp_keys": [
+        "iui"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/iui/",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/iwqos",
+      "type": "conference",
+      "short_name": "IWQoS",
+      "name": "IEEE/ACM International Symposium on Quality of Service",
+      "dblp_key": "iwqos",
+      "dblp_keys": [
+        "iwqos"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/iwqos/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/kbse",
+      "type": "conference",
+      "short_name": "ASE",
+      "name": "International Conference on Automated Software Engineering",
+      "dblp_key": "kbse",
+      "dblp_keys": [
+        "kbse"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/kbse/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/kdd",
+      "type": "conference",
+      "short_name": "SIGKDD",
+      "name": "ACM Knowledge Discovery and Data Mining",
+      "dblp_key": "kdd",
+      "dblp_keys": [
+        "kdd"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/kdd/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/kr",
+      "type": "conference",
+      "short_name": "KR",
+      "name": "International Conference on Principles of Knowledge Representation and Reasoning",
+      "dblp_key": "kr",
+      "dblp_keys": [
+        "kr"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/kr/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/lctrts",
+      "type": "conference",
+      "short_name": "LCTES",
+      "name": "International Conference on Languages, Compilers and Tools for Embedded Systems",
+      "dblp_key": "lctrts",
+      "dblp_keys": [
+        "lctrts"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/lctrts/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/lics",
+      "type": "conference",
+      "short_name": "LICS",
+      "name": "IEEE Symposium on Logic in Computer Science",
+      "dblp_key": "lics",
+      "dblp_keys": [
+        "lics"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/lics/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/lisa",
+      "type": "conference",
+      "short_name": "LISA",
+      "name": "Large Installation System Administration Conference",
+      "dblp_key": "lisa",
+      "dblp_keys": [
+        "lisa"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/lisa/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/mhci",
+      "type": "conference",
+      "short_name": "MobileHCI",
+      "name": "ACM International Conference on Mobile Human-Computer Interaction",
+      "dblp_key": "mhci",
+      "dblp_keys": [
+        "mhci"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/mhci/",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/miccai",
+      "type": "conference",
+      "short_name": "MICCAI",
+      "name": "International Conference on Medical Image Computing and Computer Assisted Intervention",
+      "dblp_key": "miccai",
+      "dblp_keys": [
+        "miccai"
+      ],
+      "url": "https://dblp.org/db/conf/miccai/index.html",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/micro",
+      "type": "conference",
+      "short_name": "MICRO",
+      "name": "IEEE/ACM International Symposium on Microarchitecture",
+      "dblp_key": "micro",
+      "dblp_keys": [
+        "micro"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/micro/index.html",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/middleware",
+      "type": "conference",
+      "short_name": "Middleware",
+      "name": "International Middleware Conference",
+      "dblp_key": "middleware",
+      "dblp_keys": [
+        "middleware"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/middleware/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/mir",
+      "type": "conference",
+      "short_name": "ICMR",
+      "name": "ACM SIGMM International Conference on Multimedia Retrieval",
+      "dblp_key": "mir",
+      "dblp_keys": [
+        "mir"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/mir/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/mm",
+      "type": "conference",
+      "short_name": "ACM MM",
+      "name": "ACM International Conference on Multimedia",
+      "dblp_key": "mm",
+      "dblp_keys": [
+        "mm"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/mm/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/mobicom",
+      "type": "conference",
+      "short_name": "MobiCom",
+      "name": "ACM Annual International Conference On Mobile Computing And Networking",
+      "dblp_key": "mobicom",
+      "dblp_keys": [
+        "mobicom"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/mobicom/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/mobihoc",
+      "type": "conference",
+      "short_name": "MobiHoc",
+      "name": "International Symposium on Mobile Ad Hoc Networking and Computing",
+      "dblp_key": "mobihoc",
+      "dblp_keys": [
+        "mobihoc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/mobihoc/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/mobisys",
+      "type": "conference",
+      "short_name": "MobiSys",
+      "name": "ACM International Conference on Mobile Systems, Applications, and Services",
+      "dblp_key": "mobisys",
+      "dblp_keys": [
+        "mobisys"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/mobisys/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/models",
+      "type": "conference",
+      "short_name": "MoDELS",
+      "name": "International Conference on Model Driven Engineering Languages and Systems",
+      "dblp_key": "models",
+      "dblp_keys": [
+        "models"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/models/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/mss",
+      "type": "conference",
+      "short_name": "MSST",
+      "name": "International Conference on Massive Storage Systems and Technology",
+      "dblp_key": "mss",
+      "dblp_keys": [
+        "mss"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/mss/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/naacl",
+      "type": "conference",
+      "short_name": "NAACL",
+      "name": "The Annual Conference of the North American Chapter of the Association for Computational Linguistics",
+      "dblp_key": "naacl",
+      "dblp_keys": [
+        "naacl"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/naacl/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/ndss",
+      "type": "conference",
+      "short_name": "NDSS",
+      "name": "Network and Distributed System Security (NDSS) Symposium",
+      "dblp_key": "ndss",
+      "dblp_keys": [
+        "ndss"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/ndss/",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/nips",
+      "type": "conference",
+      "short_name": "NeurIPS",
+      "name": "Conference on Neural Information Processing Systems",
+      "dblp_key": "nips",
+      "dblp_keys": [
+        "nips"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/nips/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/nossdav",
+      "type": "conference",
+      "short_name": "NOSSDAV",
+      "name": "International Workshop on Network and Operating System Support for Digital Audio and Video",
+      "dblp_key": "nossdav",
+      "dblp_keys": [
+        "nossdav"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/nossdav/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/nsdi",
+      "type": "conference",
+      "short_name": "NSDI",
+      "name": "USENIX Symposium on Networked Systems Design and Implementation",
+      "dblp_key": "nsdi",
+      "dblp_keys": [
+        "nsdi"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/nsdi/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/oopsla",
+      "type": "conference",
+      "short_name": "OOPSLA",
+      "name": "Conference on Object-Oriented Programming Systems, Languages, and Applications",
+      "dblp_key": "oopsla",
+      "dblp_keys": [
+        "oopsla"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/oopsla/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/osdi",
+      "type": "conference",
+      "short_name": "OSDI",
+      "name": "USENIX Symposium on Operating Systems Design and Implementation",
+      "dblp_key": "osdi",
+      "dblp_keys": [
+        "osdi"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/osdi/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/pact",
+      "type": "conference",
+      "short_name": "PACT",
+      "name": "International Conference on Parallel Architectures and Compilation Techniques",
+      "dblp_key": "pact",
+      "dblp_keys": [
+        "pact",
+        "IEEEpact"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/IEEEpact/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/percom",
+      "type": "conference",
+      "short_name": "PerCom",
+      "name": "IEEE International Conference on Pervasive Computing and Communications",
+      "dblp_key": "percom",
+      "dblp_keys": [
+        "percom"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/percom/",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/performance",
+      "type": "conference",
+      "short_name": "Performance",
+      "name": "International Symposium on Computer Performance, Modeling, Measurements and Evaluation",
+      "dblp_key": "performance",
+      "dblp_keys": [
+        "performance"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/performance/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/pg",
+      "type": "conference",
+      "short_name": "PG",
+      "name": "Pacific Graphics, The Pacific Conference on Computer Graphics and Applications",
+      "dblp_key": "pg",
+      "dblp_keys": [
+        "pg"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/pg/index.html",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/pkc",
+      "type": "conference",
+      "short_name": "PKC",
+      "name": "International Conference on Practice and Theory of Public-Key Cryptography",
+      "dblp_key": "pkc",
+      "dblp_keys": [
+        "pkc"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/pkc/index.html",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/pkdd",
+      "type": "conference",
+      "short_name": "ECML-PKDD",
+      "name": "European Conference on Machine Learning and 25th Principles and Practice of Knowledge Discovery in Databases",
+      "dblp_key": "pkdd",
+      "dblp_keys": [
+        "pkdd",
+        "ecml"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/ecml/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/pldi",
+      "type": "conference",
+      "short_name": "PLDI",
+      "name": "ACM SIGPLAN Conference on Programming Language Design & Implementation",
+      "dblp_key": "pldi",
+      "dblp_keys": [
+        "pldi"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/pldi/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/podc",
+      "type": "conference",
+      "short_name": "PODC",
+      "name": "ACM Symposium on Principles of Distributed Computing",
+      "dblp_key": "podc",
+      "dblp_keys": [
+        "podc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/podc/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/pods",
+      "type": "conference",
+      "short_name": "PODS",
+      "name": "ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of Database Systems",
+      "dblp_key": "pods",
+      "dblp_keys": [
+        "pods"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/pods/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/popl",
+      "type": "conference",
+      "short_name": "POPL",
+      "name": "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages",
+      "dblp_key": "popl",
+      "dblp_keys": [
+        "popl"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/popl/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/ppopp",
+      "type": "conference",
+      "short_name": "PPoPP",
+      "name": "ACM SIGPLAN Symposium on Principles & Practice of Parallel Programming",
+      "dblp_key": "ppopp",
+      "dblp_keys": [
+        "ppopp"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/ppopp/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/ppsn",
+      "type": "conference",
+      "short_name": "PPSN",
+      "name": "International Conference on Parallel Problem Solving From Nature",
+      "dblp_key": "ppsn",
+      "dblp_keys": [
+        "ppsn"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/ppsn/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/raid",
+      "type": "conference",
+      "short_name": "RAID",
+      "name": "International Symposium on Recent Advances in Intrusion Detection",
+      "dblp_key": "raid",
+      "dblp_keys": [
+        "raid"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/raid/index.html",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/re",
+      "type": "conference",
+      "short_name": "RE",
+      "name": "IEEE International Requirements Engineering Conference",
+      "dblp_key": "re",
+      "dblp_keys": [
+        "re"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/re/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/recomb",
+      "type": "conference",
+      "short_name": "RECOMB",
+      "name": "International Conference on Research inComputational Molecular Biology",
+      "dblp_key": "recomb",
+      "dblp_keys": [
+        "recomb"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/recomb/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/recsys",
+      "type": "conference",
+      "short_name": "RecSys",
+      "name": "ACM Conference on Recommender Systems",
+      "dblp_key": "recsys",
+      "dblp_keys": [
+        "recsys"
+      ],
+      "url": "https://dblp.org/db/conf/recsys/index.html",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/rt",
+      "type": "conference",
+      "short_name": "EGSR",
+      "name": "Eurographics Symposium on Rendering",
+      "dblp_key": "rt",
+      "dblp_keys": [
+        "rt"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/rt/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/rtas",
+      "type": "conference",
+      "short_name": "RTAS",
+      "name": "IEEE Real-Time and Embedded Technology and Applications Symposium",
+      "dblp_key": "rtas",
+      "dblp_keys": [
+        "rtas"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/rtas/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/rtss",
+      "type": "conference",
+      "short_name": "RTSS",
+      "name": "The IEEE Real-Time Systems Symposium",
+      "dblp_key": "rtss",
+      "dblp_keys": [
+        "rtss"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/rtss/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/sas",
+      "type": "conference",
+      "short_name": "SAS",
+      "name": "International Static Analysis Symposium",
+      "dblp_key": "sas",
+      "dblp_keys": [
+        "sas"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/sas/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/sat",
+      "type": "conference",
+      "short_name": "SAT",
+      "name": "International Conference on Theory and Applications of Satisfiability Testing",
+      "dblp_key": "sat",
+      "dblp_keys": [
+        "sat"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/sat/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/sc",
+      "type": "conference",
+      "short_name": "SC",
+      "name": "International Conference for High Performance Computing, Networking, Storage, and Analysis",
+      "dblp_key": "sc",
+      "dblp_keys": [
+        "sc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/sc/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/sca",
+      "type": "conference",
+      "short_name": "SCA",
+      "name": "ACM SIGGRAPH/Eurographics Symposium on Computer Animation",
+      "dblp_key": "sca",
+      "dblp_keys": [
+        "sca"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/sca/index.html",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/sdm",
+      "type": "conference",
+      "short_name": "SDM",
+      "name": "SIAM International Conference on Data Mining",
+      "dblp_key": "sdm",
+      "dblp_keys": [
+        "sdm"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/sdm/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/secon",
+      "type": "conference",
+      "short_name": "SECON",
+      "name": "IEEE International Conference on Sensing, Communication, and Networking",
+      "dblp_key": "secon",
+      "dblp_keys": [
+        "secon"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/secon/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/semweb",
+      "type": "conference",
+      "short_name": "ISWC",
+      "name": "International Semantic Web Conference",
+      "dblp_key": "semweb",
+      "dblp_keys": [
+        "semweb"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/semweb/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/sensys",
+      "type": "conference",
+      "short_name": "SenSys",
+      "name": "ACM Conference on Embedded Networked Sensor Systems",
+      "dblp_key": "sensys",
+      "dblp_keys": [
+        "sensys"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/sensys/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/sgp",
+      "type": "conference",
+      "short_name": "SGP",
+      "name": "Eurographics Symposium on Geometry Processing",
+      "dblp_key": "sgp",
+      "dblp_keys": [
+        "sgp"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/sgp/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/si3d",
+      "type": "conference",
+      "short_name": "I3D",
+      "name": "ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games",
+      "dblp_key": "si3d",
+      "dblp_keys": [
+        "si3d"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/si3d/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/sigcomm",
+      "type": "conference",
+      "short_name": "SIGCOMM",
+      "name": "ACM International Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication",
+      "dblp_key": "sigcomm",
+      "dblp_keys": [
+        "sigcomm"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/sigcomm/index.html",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/siggraph",
+      "type": "conference",
+      "short_name": "ACM SIGGRAPH",
+      "name": "ACM SIGGRAPH Annual Conference",
+      "dblp_key": "siggraph",
+      "dblp_keys": [
+        "siggraph"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/siggraph/index.html",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/sigir",
+      "type": "conference",
+      "short_name": "SIGIR",
+      "name": "International Conference on Research on Development in Information Retrieval",
+      "dblp_key": "sigir",
+      "dblp_keys": [
+        "sigir"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/sigir/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/sigmetrics",
+      "type": "conference",
+      "short_name": "SIGMETRICS",
+      "name": "ACM Special Interest Group on Measurement and Evaluation",
+      "dblp_key": "sigmetrics",
+      "dblp_keys": [
+        "sigmetrics"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/sigmetrics/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/sigmod",
+      "type": "conference",
+      "short_name": "SIGMOD",
+      "name": "ACM Conference on Management of Data",
+      "dblp_key": "sigmod",
+      "dblp_keys": [
+        "sigmod"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/sigmod/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/sigsoft",
+      "type": "conference",
+      "short_name": "FSE",
+      "name": "ACM International Conference on the Foundations of Software Engineering",
+      "dblp_key": "sigsoft",
+      "dblp_keys": [
+        "sigsoft"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/sigsoft/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/sma",
+      "type": "conference",
+      "short_name": "SPM",
+      "name": "Symposium on Solid and Physical Modeling",
+      "dblp_key": "sma",
+      "dblp_keys": [
+        "sma"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/sma/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/soda",
+      "type": "conference",
+      "short_name": "SODA",
+      "name": "ACM-SIAM Symposium on Discrete Algorithms",
+      "dblp_key": "soda",
+      "dblp_keys": [
+        "soda"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/soda/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/sosp",
+      "type": "conference",
+      "short_name": "SOSP",
+      "name": "ACM Symposium on Operating Systems Principles",
+      "dblp_key": "sosp",
+      "dblp_keys": [
+        "sosp"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/sosp/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/sp",
+      "type": "conference",
+      "short_name": "S&P",
+      "name": "IEEE Symposium on Security and Privacy",
+      "dblp_key": "sp",
+      "dblp_keys": [
+        "sp"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/sp/",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/spaa",
+      "type": "conference",
+      "short_name": "SPAA",
+      "name": "ACM Symposium on Parallelism in Algorithms and Architectures",
+      "dblp_key": "spaa",
+      "dblp_keys": [
+        "spaa"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/spaa/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/srds",
+      "type": "conference",
+      "short_name": "SRDS",
+      "name": "IEEE International Symposium on Reliable Distributed Systems",
+      "dblp_key": "srds",
+      "dblp_keys": [
+        "srds"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/srds/index.html",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/stoc",
+      "type": "conference",
+      "short_name": "STOC",
+      "name": "ACM Symposium on the Theory of Computing",
+      "dblp_key": "stoc",
+      "dblp_keys": [
+        "stoc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/stoc/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/tabletop",
+      "type": "conference",
+      "short_name": "ISS",
+      "name": "ACM International Conference on Interactive Surfaces and Spaces",
+      "dblp_key": "tabletop",
+      "dblp_keys": [
+        "tabletop"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/tabletop/",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/tcc",
+      "type": "conference",
+      "short_name": "TCC",
+      "name": "Theory of Cryptography Conference",
+      "dblp_key": "tcc",
+      "dblp_keys": [
+        "tcc"
+      ],
+      "url": "https://dblp.uni-trier.de/db/conf/tcc/index.html",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/uai",
+      "type": "conference",
+      "short_name": "UAI",
+      "name": "Conference on Uncertainty in Artificial Intelligence",
+      "dblp_key": "uai",
+      "dblp_keys": [
+        "uai"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/uai/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/uist",
+      "type": "conference",
+      "short_name": "UIST",
+      "name": "ACM Symposium on User Interface Software and Technology",
+      "dblp_key": "uist",
+      "dblp_keys": [
+        "uist"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/uist/",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/usenix",
+      "type": "conference",
+      "short_name": "SIGOPS ATC",
+      "name": "ACM SIGOPS Annual Technical Conference",
+      "dblp_key": "usenix",
+      "dblp_keys": [
+        "usenix"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/usenix/index.html",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/uss",
+      "type": "conference",
+      "short_name": "USENIX Security",
+      "name": "USENIX Security Symposium",
+      "dblp_key": "uss",
+      "dblp_keys": [
+        "uss"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/uss/",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/vee",
+      "type": "conference",
+      "short_name": "VEE",
+      "name": "Virtual Execution Environments",
+      "dblp_key": "vee",
+      "dblp_keys": [
+        "vee"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/vee/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/vissym",
+      "type": "conference",
+      "short_name": "EuroVis",
+      "name": "Eurographics Conference on Visualization",
+      "dblp_key": "vissym",
+      "dblp_keys": [
+        "vissym"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/vissym/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/visualization",
+      "type": "conference",
+      "short_name": "IEEE VIS",
+      "name": "IEEE Visualization Conference",
+      "dblp_key": "visualization",
+      "dblp_keys": [
+        "visualization"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/visualization/index.html",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/vldb",
+      "type": "conference",
+      "short_name": "VLDB",
+      "name": "International Conference on Very Large Data Bases",
+      "dblp_key": "vldb",
+      "dblp_keys": [
+        "vldb"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/vldb/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/vmcai",
+      "type": "conference",
+      "short_name": "VMCAI",
+      "name": "International Conference on Verification, Model Checking, and Abstract Interpretation",
+      "dblp_key": "vmcai",
+      "dblp_keys": [
+        "vmcai"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/vmcai/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/vr",
+      "type": "conference",
+      "short_name": "IEEE VR",
+      "name": "IEEE Virtual Reality",
+      "dblp_key": "vr",
+      "dblp_keys": [
+        "vr"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/vr/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "conference/wcre",
+      "type": "conference",
+      "short_name": "SANER",
+      "name": "IEEE International Conference on Software Analysis, Evolution and Reengineering",
+      "dblp_key": "wcre",
+      "dblp_keys": [
+        "wcre"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/wcre/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/wine",
+      "type": "conference",
+      "short_name": "WINE",
+      "name": "Conference on Web and Internet Economics",
+      "dblp_key": "wine",
+      "dblp_keys": [
+        "wine"
+      ],
+      "url": "https://dblp.org/db/conf/wine/index.html",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/wise",
+      "type": "conference",
+      "short_name": "WISE",
+      "name": "International Conference on Web Information Systems Engineering",
+      "dblp_key": "wise",
+      "dblp_keys": [
+        "wise"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/wise/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/wsdm",
+      "type": "conference",
+      "short_name": "WSDM",
+      "name": "International Conference on Web Search and Data Mining",
+      "dblp_key": "wsdm",
+      "dblp_keys": [
+        "wsdm"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/wsdm/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "conference/www",
+      "type": "conference",
+      "short_name": "WWW",
+      "name": "International World Wide Web Conferences",
+      "dblp_key": "www",
+      "dblp_keys": [
+        "www"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/www/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/aamas",
+      "type": "journal",
+      "short_name": "AAMAS",
+      "name": "Autonomous Agents and Multi-Agent Systems",
+      "dblp_key": "aamas",
+      "dblp_keys": [
+        "aamas"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/aamas/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/aei",
+      "type": "journal",
+      "short_name": "AEI",
+      "name": "Advanced Engineering Informatics",
+      "dblp_key": "aei",
+      "dblp_keys": [
+        "aei"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/aei/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/ai",
+      "type": "journal",
+      "short_name": "AI",
+      "name": "Artificial Intelligence",
+      "dblp_key": "ai",
+      "dblp_keys": [
+        "ai"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/ai/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/algorithmica",
+      "type": "journal",
+      "short_name": "Algorithmica",
+      "name": "Algorithmica",
+      "dblp_key": "algorithmica",
+      "dblp_keys": [
+        "algorithmica"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/algorithmica/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/ase",
+      "type": "journal",
+      "short_name": "ASE",
+      "name": "Automated Software Engineering",
+      "dblp_key": "ase",
+      "dblp_keys": [
+        "ase"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/ase/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/bcra",
+      "type": "journal",
+      "short_name": "BCRA",
+      "name": "Blockchain: Research and Applications",
+      "dblp_key": null,
+      "dblp_keys": [],
+      "url": "https://dblp.uni-trier.de/search?q=BCRA",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/bib",
+      "type": "journal",
+      "short_name": null,
+      "name": "Briefings in Bioinformatics",
+      "dblp_key": "bib",
+      "dblp_keys": [
+        "bib"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/bib/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/bioinformatics",
+      "type": "journal",
+      "short_name": null,
+      "name": "Bioinformatics",
+      "dblp_key": "bioinformatics",
+      "dblp_keys": [
+        "bioinformatics"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/bioinformatics/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/cad",
+      "type": "journal",
+      "short_name": "CAD",
+      "name": "Computer-Aided Design",
+      "dblp_key": "cad",
+      "dblp_keys": [
+        "cad"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/cad/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/cagd",
+      "type": "journal",
+      "short_name": "CAGD",
+      "name": "Computer Aided Geometric Design",
+      "dblp_key": "cagd",
+      "dblp_keys": [
+        "cagd"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/cagd/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/cc",
+      "type": "journal",
+      "short_name": "CC",
+      "name": "Computational Complexity",
+      "dblp_key": "cc",
+      "dblp_keys": [
+        "cc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/cc/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/ccftpci",
+      "type": "journal",
+      "short_name": "CCF TPCI",
+      "name": "CCF Transactions on Pervasive Computing and Interaction",
+      "dblp_key": "ccftpci",
+      "dblp_keys": [
+        "ccftpci"
+      ],
+      "url": "https://dblp.uni-trier.de/db/journals/ccftpci/index.html",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/cgf",
+      "type": "journal",
+      "short_name": "CGF",
+      "name": "Computer Graphics Forum",
+      "dblp_key": "cgf",
+      "dblp_keys": [
+        "cgf"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/cgf/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/chinaf",
+      "type": "journal",
+      "short_name": "SCIS",
+      "name": "Science China Information Sciences",
+      "dblp_key": "chinaf",
+      "dblp_keys": [
+        "chinaf"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/chinaf/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/cj",
+      "type": "journal",
+      "short_name": null,
+      "name": "The Computer Journal",
+      "dblp_key": "cj",
+      "dblp_keys": [
+        "cj"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/cj/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/cn",
+      "type": "journal",
+      "short_name": "CN",
+      "name": "Computer Networks",
+      "dblp_key": "cn",
+      "dblp_keys": [
+        "cn"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/cn/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/cognition",
+      "type": "journal",
+      "short_name": "Cognition",
+      "name": "Cognition",
+      "dblp_key": null,
+      "dblp_keys": [],
+      "url": "http://www.journals.elsevier.com/cognition/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/coling",
+      "type": "journal",
+      "short_name": null,
+      "name": "Computational Linguistics",
+      "dblp_key": "coling",
+      "dblp_keys": [
+        "coling"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/coling/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/compsec",
+      "type": "journal",
+      "short_name": null,
+      "name": "Computers & Security",
+      "dblp_key": "compsec",
+      "dblp_keys": [
+        "compsec"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/compsec/",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/cscw",
+      "type": "journal",
+      "short_name": "CSCW",
+      "name": "Computer Supported Cooperative Work",
+      "dblp_key": "cscw",
+      "dblp_keys": [
+        "cscw"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/cscw/",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/cviu",
+      "type": "journal",
+      "short_name": "CVIU",
+      "name": "Computer Vision and Image Understanding",
+      "dblp_key": "cviu",
+      "dblp_keys": [
+        "cviu"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/cviu/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/cvm",
+      "type": "journal",
+      "short_name": "CVMJ",
+      "name": "Computational Visual Media",
+      "dblp_key": "cvm",
+      "dblp_keys": [
+        "cvm"
+      ],
+      "url": "https://dblp.org/db/journals/cvm/index.html",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/cybersec",
+      "type": "journal",
+      "short_name": "Cybersecurity",
+      "name": "Cybersecurity",
+      "dblp_key": "cybersec",
+      "dblp_keys": [
+        "cybersec"
+      ],
+      "url": "https://dblp.uni-trier.de/db/journals/cybersec/index.html",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/dase",
+      "type": "journal",
+      "short_name": "DSE",
+      "name": "Data Science and Engineering",
+      "dblp_key": "dase",
+      "dblp_keys": [
+        "dase"
+      ],
+      "url": "https://dblp.org/db/journals/dase/index.html",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/datamine",
+      "type": "journal",
+      "short_name": "DMKD",
+      "name": "Data Mining and Knowledge Discovery",
+      "dblp_key": "datamine",
+      "dblp_keys": [
+        "datamine"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/datamine/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/dcc",
+      "type": "journal",
+      "short_name": null,
+      "name": "Designs, Codes and Cryptography",
+      "dblp_key": "dcc",
+      "dblp_keys": [
+        "dcc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/dcc/",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/dke",
+      "type": "journal",
+      "short_name": "DKE",
+      "name": "Data & Knowledge Engineering",
+      "dblp_key": "dke",
+      "dblp_keys": [
+        "dke"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/dke/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        },
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/ec",
+      "type": "journal",
+      "short_name": null,
+      "name": "Evolutionary Computation",
+      "dblp_key": "ec",
+      "dblp_keys": [
+        "ec"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/ec/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/ejis",
+      "type": "journal",
+      "short_name": "EJIS",
+      "name": "European Journal of Information Systems",
+      "dblp_key": "ejis",
+      "dblp_keys": [
+        "ejis"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/ejis/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/ese",
+      "type": "journal",
+      "short_name": "ESE",
+      "name": "Empirical Software Engineering",
+      "dblp_key": "ese",
+      "dblp_keys": [
+        "ese"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/ese/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/fac",
+      "type": "journal",
+      "short_name": "FAC",
+      "name": "Formal Aspects of Computing",
+      "dblp_key": "fac",
+      "dblp_keys": [
+        "fac"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/fac/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/fcsc",
+      "type": "journal",
+      "short_name": "FCS",
+      "name": "Frontiers of Computer Science",
+      "dblp_key": "fcsc",
+      "dblp_keys": [
+        "fcsc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/fcsc/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/fmsd",
+      "type": "journal",
+      "short_name": "FMSD",
+      "name": "Formal Methods in System Design",
+      "dblp_key": "fmsd",
+      "dblp_keys": [
+        "fmsd"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/fmsd/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/geoinformatica",
+      "type": "journal",
+      "short_name": null,
+      "name": "GeoInformatica",
+      "dblp_key": "geoinformatica",
+      "dblp_keys": [
+        "geoinformatica"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/geoinformatica/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/hhci",
+      "type": "journal",
+      "short_name": "HCI",
+      "name": "Human-Computer Interaction",
+      "dblp_key": "hhci",
+      "dblp_keys": [
+        "hhci"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/hhci/",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/iandc",
+      "type": "journal",
+      "short_name": "IANDC",
+      "name": "Information and Computation",
+      "dblp_key": "iandc",
+      "dblp_keys": [
+        "iandc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/iandc/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/iet-sen",
+      "type": "journal",
+      "short_name": "IETS",
+      "name": "IET Software",
+      "dblp_key": "iet-sen",
+      "dblp_keys": [
+        "iet-sen"
+      ],
+      "url": "https://dblp.uni-trier.de/db/journals/iet-sen/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/ijar",
+      "type": "journal",
+      "short_name": "IJAR",
+      "name": "International Journal of Approximate Reasoning",
+      "dblp_key": "ijar",
+      "dblp_keys": [
+        "ijar"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/ijar/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/ijcv",
+      "type": "journal",
+      "short_name": "IJCV",
+      "name": "International Journal of Computer Vision",
+      "dblp_key": "ijcv",
+      "dblp_keys": [
+        "ijcv"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/ijcv/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/ijhci",
+      "type": "journal",
+      "short_name": "IJHCI",
+      "name": "International Journal of Human-Computer Interaction",
+      "dblp_key": "ijhci",
+      "dblp_keys": [
+        "ijhci"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/ijhci/",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/ijmms",
+      "type": "journal",
+      "short_name": "IJHCS",
+      "name": "International Journal of Human-Computer Studies",
+      "dblp_key": "ijmms",
+      "dblp_keys": [
+        "ijmms"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/ijmms/",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/informs",
+      "type": "journal",
+      "short_name": "INFORMS",
+      "name": "INFORMS Journal on Computing",
+      "dblp_key": "informs",
+      "dblp_keys": [
+        "informs"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/informs/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/infsof",
+      "type": "journal",
+      "short_name": "IST",
+      "name": "Information and Software Technology",
+      "dblp_key": "infsof",
+      "dblp_keys": [
+        "infsof"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/infsof/index.html",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/ipm",
+      "type": "journal",
+      "short_name": "IPM",
+      "name": "Information Processing and Management",
+      "dblp_key": "ipm",
+      "dblp_keys": [
+        "ipm"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/ipm/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/is",
+      "type": "journal",
+      "short_name": "IS",
+      "name": "Information Systems",
+      "dblp_key": "is",
+      "dblp_keys": [
+        "is"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/is/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/isci",
+      "type": "journal",
+      "short_name": null,
+      "name": "Information Sciences",
+      "dblp_key": "isci",
+      "dblp_keys": [
+        "isci"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/isci/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/iwc",
+      "type": "journal",
+      "short_name": "IWC",
+      "name": "Interacting with Computers",
+      "dblp_key": "iwc",
+      "dblp_keys": [
+        "iwc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/iwc/",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/jacm",
+      "type": "journal",
+      "short_name": "JACM",
+      "name": "Journal of the ACM",
+      "dblp_key": "jacm",
+      "dblp_keys": [
+        "jacm"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/jacm/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/jair",
+      "type": "journal",
+      "short_name": "JAIR",
+      "name": "Journal of Artificial Intelligence Research",
+      "dblp_key": "jair",
+      "dblp_keys": [
+        "jair"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/jair/index.html",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/jamia",
+      "type": "journal",
+      "short_name": "JAMIA",
+      "name": "Journal of the American Medical Informatics Association",
+      "dblp_key": "jamia",
+      "dblp_keys": [
+        "jamia"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/jamia/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/jar",
+      "type": "journal",
+      "short_name": null,
+      "name": "Journal of Automated Reasoning",
+      "dblp_key": "jar",
+      "dblp_keys": [
+        "jar"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/jar/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/jasa",
+      "type": "journal",
+      "short_name": "JASA",
+      "name": "The Journal of the Acoustical Society of America",
+      "dblp_key": null,
+      "dblp_keys": [],
+      "url": "http://scitation.aip.org/content/asa/journal/jasa",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/jasis",
+      "type": "journal",
+      "short_name": "JASIST",
+      "name": "Journal of the Association for Information Science and Technology",
+      "dblp_key": "jasis",
+      "dblp_keys": [
+        "jasis"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/jasis/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/jcs",
+      "type": "journal",
+      "short_name": "JCS",
+      "name": "Journal of Computer Security",
+      "dblp_key": "jcs",
+      "dblp_keys": [
+        "jcs"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/jcs/",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/jcss",
+      "type": "journal",
+      "short_name": "JCSS",
+      "name": "Journal of Computer and System Sciences",
+      "dblp_key": "jcss",
+      "dblp_keys": [
+        "jcss"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/jcss/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/jcst",
+      "type": "journal",
+      "short_name": "JCST",
+      "name": "Journal of Computer Science and Technology",
+      "dblp_key": "jcst",
+      "dblp_keys": [
+        "jcst"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/jcst/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/jfp",
+      "type": "journal",
+      "short_name": "JFP",
+      "name": "Journal of Functional Programming",
+      "dblp_key": "jfp",
+      "dblp_keys": [
+        "jfp"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/jfp/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/jgo",
+      "type": "journal",
+      "short_name": "JGO",
+      "name": "Journal of Global Optimization",
+      "dblp_key": "jgo",
+      "dblp_keys": [
+        "jgo"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/jgo/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/jmlr",
+      "type": "journal",
+      "short_name": "JMLR",
+      "name": "Journal of Machine Learning Research",
+      "dblp_key": "jmlr",
+      "dblp_keys": [
+        "jmlr"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/jmlr/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/joc",
+      "type": "journal",
+      "short_name": null,
+      "name": "Journal of Cryptology",
+      "dblp_key": "joc",
+      "dblp_keys": [
+        "joc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/joc/",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/jpdc",
+      "type": "journal",
+      "short_name": "JPDC",
+      "name": "Journal of Parallel and Distributed Computing",
+      "dblp_key": "jpdc",
+      "dblp_keys": [
+        "jpdc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/jpdc/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/jsa",
+      "type": "journal",
+      "short_name": "JSA",
+      "name": "Journal of Systems Architecture: Embedded Software Design",
+      "dblp_key": "jsa",
+      "dblp_keys": [
+        "jsa"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/jsa/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/jsac",
+      "type": "journal",
+      "short_name": "JSAC",
+      "name": "IEEE Journal on Selected Areas in Communications",
+      "dblp_key": "jsac",
+      "dblp_keys": [
+        "jsac"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/jsac/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/jsc",
+      "type": "journal",
+      "short_name": "JSC",
+      "name": "Journal of Symbolic Computation",
+      "dblp_key": "jsc",
+      "dblp_keys": [
+        "jsc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/jsc/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/jslhr",
+      "type": "journal",
+      "short_name": "JSLHR",
+      "name": "Journal of Speech, Language, and Hearing Research",
+      "dblp_key": null,
+      "dblp_keys": [],
+      "url": "http://jslhr.pubs.asha.org/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/jss",
+      "type": "journal",
+      "short_name": "JSS",
+      "name": "Journal of Systems and Software",
+      "dblp_key": "jss",
+      "dblp_keys": [
+        "jss"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/jss/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/kais",
+      "type": "journal",
+      "short_name": "KAIS",
+      "name": "Knowledge and Information Systems",
+      "dblp_key": "kais",
+      "dblp_keys": [
+        "kais"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/kais/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/ml",
+      "type": "journal",
+      "short_name": null,
+      "name": "Machine Learning",
+      "dblp_key": "ml",
+      "dblp_keys": [
+        "ml"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/ml/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/mscs",
+      "type": "journal",
+      "short_name": "MSCS",
+      "name": "Mathematical Structures in Computer Science",
+      "dblp_key": "mscs",
+      "dblp_keys": [
+        "mscs"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/mscs/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/neco",
+      "type": "journal",
+      "short_name": null,
+      "name": "Neural Computation",
+      "dblp_key": "neco",
+      "dblp_keys": [
+        "neco"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/neco/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/nn",
+      "type": "journal",
+      "short_name": null,
+      "name": "Neural Networks",
+      "dblp_key": "nn",
+      "dblp_keys": [
+        "nn"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/nn/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/pami",
+      "type": "journal",
+      "short_name": "TPAMI",
+      "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "dblp_key": "pami",
+      "dblp_keys": [
+        "pami"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/pami/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/pc",
+      "type": "journal",
+      "short_name": null,
+      "name": "Parallel Computing",
+      "dblp_key": "pc",
+      "dblp_keys": [
+        "pc"
+      ],
+      "url": "https://dblp.org/db/journals/pc/index.html",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/pe",
+      "type": "journal",
+      "short_name": null,
+      "name": "Performance Evaluation: An International Journal",
+      "dblp_key": "pe",
+      "dblp_keys": [
+        "pe"
+      ],
+      "url": "https://dblp.org/db/journals/pe/index.html",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/pieee",
+      "type": "journal",
+      "short_name": "Proc. IEEE",
+      "name": "Proceedings of the IEEE",
+      "dblp_key": "pieee",
+      "dblp_keys": [
+        "pieee"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/pieee/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/ploscb",
+      "type": "journal",
+      "short_name": null,
+      "name": "PLOS Computational Biology",
+      "dblp_key": "ploscb",
+      "dblp_keys": [
+        "ploscb"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/ploscb/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/pr",
+      "type": "journal",
+      "short_name": "PR",
+      "name": "Pattern Recognition",
+      "dblp_key": "pr",
+      "dblp_keys": [
+        "pr"
+      ],
+      "url": "http://dblp.uni-trier.de/db/conf/par/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/re",
+      "type": "journal",
+      "short_name": "RE",
+      "name": "Requirements Engineering",
+      "dblp_key": "re",
+      "dblp_keys": [
+        "re"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/re/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/scp",
+      "type": "journal",
+      "short_name": "SCP",
+      "name": "Science of Computer Programming",
+      "dblp_key": "scp",
+      "dblp_keys": [
+        "scp"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/scp/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/siamcomp",
+      "type": "journal",
+      "short_name": "SICOMP",
+      "name": "SIAM Journal on Computing",
+      "dblp_key": "siamcomp",
+      "dblp_keys": [
+        "siamcomp"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/siamcomp/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/siamis",
+      "type": "journal",
+      "short_name": "SIIMS",
+      "name": "SIAM Journal on Imaging Sciences",
+      "dblp_key": "siamis",
+      "dblp_keys": [
+        "siamis"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/siamis/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/smr",
+      "type": "journal",
+      "short_name": null,
+      "name": "Journal of Software: Evolution and Process",
+      "dblp_key": "smr",
+      "dblp_keys": [
+        "smr"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/smr/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/sosym",
+      "type": "journal",
+      "short_name": "SoSyM",
+      "name": "Software and Systems Modeling",
+      "dblp_key": "sosym",
+      "dblp_keys": [
+        "sosym"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/sosym/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/spe",
+      "type": "journal",
+      "short_name": "SPE",
+      "name": "Software: Practice and Experience",
+      "dblp_key": "spe",
+      "dblp_keys": [
+        "spe"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/spe/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/speech",
+      "type": "journal",
+      "short_name": "SPECOM",
+      "name": "Speech Communication",
+      "dblp_key": "speech",
+      "dblp_keys": [
+        "speech"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/speech/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/stvr",
+      "type": "journal",
+      "short_name": "STVR",
+      "name": "Software Testing, Verification and Reliability",
+      "dblp_key": "stvr",
+      "dblp_keys": [
+        "stvr"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/stvr/index.html",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/taas",
+      "type": "journal",
+      "short_name": "TAAS",
+      "name": "ACM Transactions on Autonomous and Adaptive Systems",
+      "dblp_key": "taas",
+      "dblp_keys": [
+        "taas"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/taas/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tacl",
+      "type": "journal",
+      "short_name": "TACL",
+      "name": "Transactions of the Association for Computational Linguistics",
+      "dblp_key": "tacl",
+      "dblp_keys": [
+        "tacl"
+      ],
+      "url": "https://dblp.org/db/journals/tacl/index.html",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/taco",
+      "type": "journal",
+      "short_name": "TACO",
+      "name": "ACM Transactions on Architecture and Code Optimization",
+      "dblp_key": "taco",
+      "dblp_keys": [
+        "taco"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/taco/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/taffco",
+      "type": "journal",
+      "short_name": "TAC",
+      "name": "IEEE Transactions on Affective Computing",
+      "dblp_key": "taffco",
+      "dblp_keys": [
+        "taffco"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/taffco/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/talg",
+      "type": "journal",
+      "short_name": "TALG",
+      "name": "ACM Transactions on Algorithms",
+      "dblp_key": "talg",
+      "dblp_keys": [
+        "talg"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/talg/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tap",
+      "type": "journal",
+      "short_name": "TAP",
+      "name": "ACM Transactions on Applied Perception",
+      "dblp_key": "tap",
+      "dblp_keys": [
+        "tap"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tap/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tase",
+      "type": "journal",
+      "short_name": "TASAE",
+      "name": "IEEE Transactions on Automation Science and Engineering",
+      "dblp_key": "tase",
+      "dblp_keys": [
+        "tase"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tase/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/taslp",
+      "type": "journal",
+      "short_name": "TASLP",
+      "name": "IEEE/ACM Transactions on Audio, Speech and Language Processing",
+      "dblp_key": "taslp",
+      "dblp_keys": [
+        "taslp"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/taslp/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tc",
+      "type": "journal",
+      "short_name": "TC",
+      "name": "IEEE Transactions on Computers",
+      "dblp_key": "tc",
+      "dblp_keys": [
+        "tc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tc/index.html",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/tcad",
+      "type": "journal",
+      "short_name": "TCAD",
+      "name": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+      "dblp_key": "tcad",
+      "dblp_keys": [
+        "tcad"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tcad/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/tcbb",
+      "type": "journal",
+      "short_name": "TCBB",
+      "name": "IEEE/ACM Transactions on Computational Biology and Bioinformatics",
+      "dblp_key": "tcbb",
+      "dblp_keys": [
+        "tcbb"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tcbb/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tcc",
+      "type": "journal",
+      "short_name": "TCC",
+      "name": "IEEE Transactions on Cloud Computing",
+      "dblp_key": "tcc",
+      "dblp_keys": [
+        "tcc"
+      ],
+      "url": "https://dblp.uni-trier.de/db/journals/tcc/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tcom",
+      "type": "journal",
+      "short_name": "TCOM",
+      "name": "IEEE Transactions on Communications",
+      "dblp_key": "tcom",
+      "dblp_keys": [
+        "tcom"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tcom/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tcs",
+      "type": "journal",
+      "short_name": "TCS",
+      "name": "Theoretical Computer Science",
+      "dblp_key": "tcs",
+      "dblp_keys": [
+        "tcs"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tcs/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tcsv",
+      "type": "journal",
+      "short_name": "TCSVT",
+      "name": "IEEE Transactions on Circuits and Systems for Video Technology",
+      "dblp_key": "tcsv",
+      "dblp_keys": [
+        "tcsv"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tcsv/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tcyb",
+      "type": "journal",
+      "short_name": null,
+      "name": "IEEE Transactions on Cybernetics",
+      "dblp_key": "tcyb",
+      "dblp_keys": [
+        "tcyb"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tcyb/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tdsc",
+      "type": "journal",
+      "short_name": "TDSC",
+      "name": "IEEE Transactions on Dependable and Secure Computing",
+      "dblp_key": "tdsc",
+      "dblp_keys": [
+        "tdsc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tdsc/",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/tec",
+      "type": "journal",
+      "short_name": "TEC",
+      "name": "IEEE Transactions on Evolutionary Computation",
+      "dblp_key": "tec",
+      "dblp_keys": [
+        "tec"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tec/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tecs",
+      "type": "journal",
+      "short_name": "TECS",
+      "name": "ACM Transactions on Embedded Computing Systems",
+      "dblp_key": "tecs",
+      "dblp_keys": [
+        "tecs"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tecs/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tfs",
+      "type": "journal",
+      "short_name": "TFS",
+      "name": "IEEE Transactions on Fuzzy Systems",
+      "dblp_key": "tfs",
+      "dblp_keys": [
+        "tfs"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tfs/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tgrs",
+      "type": "journal",
+      "short_name": "TGARS",
+      "name": "IEEE Transactions on Geoscience and Remote Sensing",
+      "dblp_key": "tgrs",
+      "dblp_keys": [
+        "tgrs"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tgrs/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/thms",
+      "type": "journal",
+      "short_name": null,
+      "name": "IEEE Transactions on Human-Machine Systems",
+      "dblp_key": "thms",
+      "dblp_keys": [
+        "thms"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/thms/",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tifs",
+      "type": "journal",
+      "short_name": "TIFS",
+      "name": "IEEE Transactions on Information Forensics and Security",
+      "dblp_key": "tifs",
+      "dblp_keys": [
+        "tifs"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tifs/",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/tip",
+      "type": "journal",
+      "short_name": "TIP",
+      "name": "IEEE Transactions on Image Processing",
+      "dblp_key": "tip",
+      "dblp_keys": [
+        "tip"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tip/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/tissec",
+      "type": "journal",
+      "short_name": "TOPS",
+      "name": "ACM Transactions on Privacy and Security",
+      "dblp_key": "tissec",
+      "dblp_keys": [
+        "tissec"
+      ],
+      "url": "https://dblp.org/db/journals/tissec/index.html",
+      "classifications": [
+        {
+          "category": "SC",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tit",
+      "type": "journal",
+      "short_name": "TIT",
+      "name": "IEEE Transactions on Information Theory",
+      "dblp_key": "tit",
+      "dblp_keys": [
+        "tit"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tit/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/tits",
+      "type": "journal",
+      "short_name": "TITS",
+      "name": "IEEE Transactions on Intelligent Transportation Systems",
+      "dblp_key": "tits",
+      "dblp_keys": [
+        "tits"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tits/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tkdd",
+      "type": "journal",
+      "short_name": "TKDD",
+      "name": "ACM Transactions on Knowledge Discovery from Data",
+      "dblp_key": "tkdd",
+      "dblp_keys": [
+        "tkdd"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tkdd/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tkde",
+      "type": "journal",
+      "short_name": "TKDE",
+      "name": "IEEE Transactions on Knowledge and Data Engineering",
+      "dblp_key": "tkde",
+      "dblp_keys": [
+        "tkde"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tkde/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/tmc",
+      "type": "journal",
+      "short_name": "TMC",
+      "name": "IEEE Transactions on Mobile Computing",
+      "dblp_key": "tmc",
+      "dblp_keys": [
+        "tmc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tmc/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/tmi",
+      "type": "journal",
+      "short_name": "TMI",
+      "name": "IEEE Transactions on Medical Imaging",
+      "dblp_key": "tmi",
+      "dblp_keys": [
+        "tmi"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tmi/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tmm",
+      "type": "journal",
+      "short_name": "TMM",
+      "name": "IEEE Transactions on Multimedia",
+      "dblp_key": "tmm",
+      "dblp_keys": [
+        "tmm"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tmm/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/tnn",
+      "type": "journal",
+      "short_name": "TNNLS",
+      "name": "IEEE Transactions on Neural Networks and learning systems",
+      "dblp_key": "tnn",
+      "dblp_keys": [
+        "tnn"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tnn/",
+      "classifications": [
+        {
+          "category": "AI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tochi",
+      "type": "journal",
+      "short_name": "TOCHI",
+      "name": "ACM Transactions on Computer-Human Interaction",
+      "dblp_key": "tochi",
+      "dblp_keys": [
+        "tochi"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tochi/",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/tocl",
+      "type": "journal",
+      "short_name": "TOCL",
+      "name": "ACM Transactions on Computational Logic",
+      "dblp_key": "tocl",
+      "dblp_keys": [
+        "tocl"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tocl/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tocs",
+      "type": "journal",
+      "short_name": "TOCS",
+      "name": "ACM Transactions on Computer Systems",
+      "dblp_key": "tocs",
+      "dblp_keys": [
+        "tocs"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tocs/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/todaes",
+      "type": "journal",
+      "short_name": "TODAES",
+      "name": "ACM Transactions on Design Automation of Electronic Systems",
+      "dblp_key": "todaes",
+      "dblp_keys": [
+        "todaes"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/todaes/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tods",
+      "type": "journal",
+      "short_name": "TODS",
+      "name": "ACM Transactions on Database Systems",
+      "dblp_key": "tods",
+      "dblp_keys": [
+        "tods"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tods/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/tog",
+      "type": "journal",
+      "short_name": "TOG",
+      "name": "ACM Transactions on Graphics",
+      "dblp_key": "tog",
+      "dblp_keys": [
+        "tog"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tog/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/tois",
+      "type": "journal",
+      "short_name": "TOIS",
+      "name": "ACM Transactions on Information Systems",
+      "dblp_key": "tois",
+      "dblp_keys": [
+        "tois"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tois/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/toit",
+      "type": "journal",
+      "short_name": "TOIT",
+      "name": "ACM Transactions on Internet Technology",
+      "dblp_key": "toit",
+      "dblp_keys": [
+        "toit"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/toit/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tomccap",
+      "type": "journal",
+      "short_name": "TOMM",
+      "name": "ACM Transactions on Multimedia Computing, Communications and Applications",
+      "dblp_key": "tomccap",
+      "dblp_keys": [
+        "tomccap"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tomccap/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "B"
+        },
+        {
+          "category": "NW",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/toms",
+      "type": "journal",
+      "short_name": "TOMS",
+      "name": "ACM Transactions on Mathematical Software",
+      "dblp_key": "toms",
+      "dblp_keys": [
+        "toms"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/toms/",
+      "classifications": [
+        {
+          "category": "CT",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/ton",
+      "type": "journal",
+      "short_name": "TON",
+      "name": "IEEE/ACM Transactions on Networking",
+      "dblp_key": "ton",
+      "dblp_keys": [
+        "ton"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/ton/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/toplas",
+      "type": "journal",
+      "short_name": "TOPLAS",
+      "name": "ACM Transactions on Programming Languages and Systems",
+      "dblp_key": "toplas",
+      "dblp_keys": [
+        "toplas"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/toplas/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/tos",
+      "type": "journal",
+      "short_name": "TOS",
+      "name": "ACM Transactions on Storage",
+      "dblp_key": "tos",
+      "dblp_keys": [
+        "tos"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tos/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/tosem",
+      "type": "journal",
+      "short_name": "TOSEM",
+      "name": "ACM Transactions on Software Engineering and Methodology",
+      "dblp_key": "tosem",
+      "dblp_keys": [
+        "tosem"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tosem/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/tosn",
+      "type": "journal",
+      "short_name": "TOSN",
+      "name": "ACM Transactions on Sensor Networks",
+      "dblp_key": "tosn",
+      "dblp_keys": [
+        "tosn"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tosn/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tpds",
+      "type": "journal",
+      "short_name": "TPDS",
+      "name": "IEEE Transactions on Parallel and Distributed Systems",
+      "dblp_key": "tpds",
+      "dblp_keys": [
+        "tpds"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tpds/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/trets",
+      "type": "journal",
+      "short_name": "TRETS",
+      "name": "ACM Transactions on Reconfigurable Technology and Systems",
+      "dblp_key": "trets",
+      "dblp_keys": [
+        "trets"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/trets/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/trob",
+      "type": "journal",
+      "short_name": "TR",
+      "name": "IEEE Transactions on Robotics",
+      "dblp_key": "trob",
+      "dblp_keys": [
+        "trob"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/trob/",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tsc",
+      "type": "journal",
+      "short_name": "TSC",
+      "name": "IEEE Transactions on Services Computing",
+      "dblp_key": "tsc",
+      "dblp_keys": [
+        "tsc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tsc/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/tse",
+      "type": "journal",
+      "short_name": "TSE",
+      "name": "IEEE Transactions on Software Engineering",
+      "dblp_key": "tse",
+      "dblp_keys": [
+        "tse"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tse/",
+      "classifications": [
+        {
+          "category": "SE",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/tsmc",
+      "type": "journal",
+      "short_name": "TSMC",
+      "name": "IEEE Transactions on Systems, Man, and Cybernetics: Systems",
+      "dblp_key": "tsmc",
+      "dblp_keys": [
+        "tsmc"
+      ],
+      "url": "https://dblp.org/db/journals/tsmc/tsmc12.html",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tvcg",
+      "type": "journal",
+      "short_name": "TVCG",
+      "name": "IEEE Transactions on Visualization and Computer Graphics",
+      "dblp_key": "tvcg",
+      "dblp_keys": [
+        "tvcg"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tvcg/",
+      "classifications": [
+        {
+          "category": "CG",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/tvlsi",
+      "type": "journal",
+      "short_name": "TVLSI",
+      "name": "IEEE Transactions on Very Large Scale Integration (VLSI) Systems",
+      "dblp_key": "tvlsi",
+      "dblp_keys": [
+        "tvlsi"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tvlsi/",
+      "classifications": [
+        {
+          "category": "DS",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/twc",
+      "type": "journal",
+      "short_name": "TWC",
+      "name": "IEEE Transactions on Wireless Communications",
+      "dblp_key": "twc",
+      "dblp_keys": [
+        "twc"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/twc/",
+      "classifications": [
+        {
+          "category": "NW",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/tweb",
+      "type": "journal",
+      "short_name": "TWEB",
+      "name": "ACM Transactions on the Web",
+      "dblp_key": "tweb",
+      "dblp_keys": [
+        "tweb"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/tweb/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/umuai",
+      "type": "journal",
+      "short_name": "UMUAI",
+      "name": "User Modeling and User-Adapted Interaction",
+      "dblp_key": "umuai",
+      "dblp_keys": [
+        "umuai"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/umuai/",
+      "classifications": [
+        {
+          "category": "HI",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/vldb",
+      "type": "journal",
+      "short_name": "VLDBJ",
+      "name": "The VLDB Journal",
+      "dblp_key": "vldb",
+      "dblp_keys": [
+        "vldb"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/vldb/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "A"
+        }
+      ]
+    },
+    {
+      "id": "journal/ws",
+      "type": "journal",
+      "short_name": "JWS",
+      "name": "Journal of Web Semantics",
+      "dblp_key": "ws",
+      "dblp_keys": [
+        "ws"
+      ],
+      "url": "http://dblp.uni-trier.de/db/journals/ws/",
+      "classifications": [
+        {
+          "category": "DB",
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "id": "journal/www",
+      "type": "journal",
+      "short_name": "WWW",
+      "name": "World Wide Web",
+      "dblp_key": "www",
+      "dblp_keys": [
+        "www"
+      ],
+      "url": "https://dblp.org/db/journals/www/index.html",
+      "classifications": [
+        {
+          "category": "MX",
+          "rank": "B"
+        }
+      ]
+    }
+  ],
+  "expected_counts": {
+    "conference": 190,
+    "journal": 148,
+    "classifications": 340
+  }
+}
