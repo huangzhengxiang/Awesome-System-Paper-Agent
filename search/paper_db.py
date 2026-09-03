@@ -56,6 +56,12 @@ CREATE TABLE IF NOT EXISTS venue_stream (
     dblp_key TEXT NOT NULL,
     PRIMARY KEY (venue_id, dblp_key)
 );
+CREATE TABLE IF NOT EXISTS venue_official_source (
+    venue_id TEXT NOT NULL REFERENCES venue(id) ON DELETE CASCADE,
+    source_type TEXT NOT NULL,
+    config_json TEXT NOT NULL,
+    PRIMARY KEY (venue_id, source_type, config_json)
+);
 CREATE TABLE IF NOT EXISTS paper (
     id INTEGER PRIMARY KEY,
     dblp_record_key TEXT NOT NULL UNIQUE,
@@ -68,6 +74,7 @@ CREATE TABLE IF NOT EXISTS paper (
     authors_json TEXT NOT NULL DEFAULT '[]',
     doi TEXT,
     url TEXT,
+    metadata_source TEXT NOT NULL DEFAULT 'dblp',
     fetched_at TEXT NOT NULL
 );
 CREATE TABLE IF NOT EXISTS paper_venue (
@@ -83,6 +90,7 @@ CREATE TABLE IF NOT EXISTS sync_run (
     finished_at TEXT,
     status TEXT NOT NULL,
     fetched_count INTEGER NOT NULL DEFAULT 0,
+    metadata_source TEXT,
     error TEXT
 );
 CREATE TABLE IF NOT EXISTS semantic_run (
@@ -129,6 +137,15 @@ def migrate_schema(connection: sqlite3.Connection) -> None:
         connection.execute("ALTER TABLE paper ADD COLUMN abstract TEXT")
     if "abstract_checked_at" not in columns:
         connection.execute("ALTER TABLE paper ADD COLUMN abstract_checked_at TEXT")
+    if "metadata_source" not in columns:
+        connection.execute(
+            "ALTER TABLE paper ADD COLUMN metadata_source TEXT NOT NULL DEFAULT 'dblp'"
+        )
+    sync_columns = {
+        row[1] for row in connection.execute("PRAGMA table_info(sync_run)")
+    }
+    if "metadata_source" not in sync_columns:
+        connection.execute("ALTER TABLE sync_run ADD COLUMN metadata_source TEXT")
     run_columns = {
         row[1] for row in connection.execute("PRAGMA table_info(semantic_run)")
     }
@@ -174,6 +191,12 @@ def validate_catalog(catalog: dict[str, object]) -> None:
             if item["category"] not in category_codes or item["rank"] not in ("A", "B"):
                 raise ValueError(f"invalid classification for {venue_id}: {item}")
             counts["classifications"] += 1
+        official_sources = venue.get("official_sources", [])
+        if not isinstance(official_sources, list) or any(
+            not isinstance(source, dict) or not source.get("type")
+            for source in official_sources
+        ):
+            raise ValueError(f"invalid official_sources for {venue_id}")
     expected = catalog.get("expected_counts")
     if expected and counts != expected:
         raise ValueError(f"catalog count mismatch: expected {expected}, got {counts}")
@@ -225,6 +248,21 @@ def initialize(connection: sqlite3.Connection, catalog_path: Path) -> None:
             connection.executemany(
                 "INSERT INTO venue_stream(venue_id, dblp_key) VALUES (?, ?)",
                 ((venue["id"], key) for key in stream_keys),
+            )
+            connection.execute(
+                "DELETE FROM venue_official_source WHERE venue_id = ?", (venue["id"],)
+            )
+            connection.executemany(
+                """INSERT INTO venue_official_source(
+                       venue_id, source_type, config_json
+                   ) VALUES (?, ?, ?)""",
+                (
+                    (
+                        venue["id"], source["type"],
+                        json.dumps(source, ensure_ascii=False, sort_keys=True),
+                    )
+                    for source in venue.get("official_sources", [])
+                ),
             )
         placeholders = ",".join("?" for _ in seen_ids)
         connection.execute(
@@ -565,6 +603,98 @@ def deepseek_batch_with_retry(
     raise AssertionError("unreachable")
 
 
+def open_text(url: str, retries: int = 3) -> str:
+    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    for attempt in range(retries):
+        try:
+            with urllib.request.urlopen(request, timeout=60) as response:
+                charset = response.headers.get_content_charset() or "utf-8"
+                return response.read().decode(charset, errors="replace")
+        except urllib.error.HTTPError as error:
+            if error.code == 404:
+                return ""
+            if error.code not in (408, 429) and error.code < 500:
+                raise
+            if attempt + 1 == retries:
+                raise
+            time.sleep(2**attempt)
+        except (OSError, TimeoutError):
+            if attempt + 1 == retries:
+                raise
+            time.sleep(2**attempt)
+    raise AssertionError("unreachable")
+
+
+def fetch_usenix(
+    source: dict[str, object], year: int, venue_name: str
+) -> list[dict[str, object]]:
+    slug_template = str(source.get("conference_slug") or "")
+    if not slug_template:
+        raise ValueError("USENIX official source requires conference_slug")
+    slug = slug_template.format(year=year, yy=f"{year % 100:02d}")
+    # USENIX redirects this canonical HTTP entry point to HTTPS. Starting there
+    # also avoids intermittent direct-TLS disconnects observed from some hosts.
+    sessions_url = f"http://www.usenix.org/conference/{slug}/technical-sessions"
+    page = open_text(sessions_url)
+    if not page:
+        return []
+    article_pattern = re.compile(
+        r'<article\b(?=[^>]*class="[^"]*\bnode-paper\b[^"]*")[^>]*>'
+        r"(.*?)</article>",
+        re.IGNORECASE | re.DOTALL,
+    )
+    link_pattern = re.compile(
+        r'<h2[^>]*>\s*<a\s+[^>]*href="([^"]*/presentation/[^"]+)"[^>]*>'
+        r"(.*?)</a>",
+        re.IGNORECASE | re.DOTALL,
+    )
+    records: dict[str, dict[str, object]] = {}
+    for article in article_pattern.findall(page):
+        link = link_pattern.search(article)
+        if not link:
+            continue
+        href, raw_title = link.groups()
+        url = urllib.parse.urljoin("https://www.usenix.org", html.unescape(href))
+        title = clean_title(raw_title)
+        if not title:
+            continue
+        abstract = None
+        marker = "field-name-field-paper-description-long"
+        if marker in article:
+            description = article.split(marker, 1)[1]
+            paragraphs = [
+                clean_title(paragraph)
+                for paragraph in re.findall(
+                    r"<p(?:\s[^>]*)?>(.*?)</p>", description,
+                    re.IGNORECASE | re.DOTALL,
+                )
+            ]
+            abstract = " ".join(item for item in paragraphs if item) or None
+        presentation_id = url.rstrip("/").rsplit("/", 1)[-1]
+        records[url] = {
+            "_source": "official:usenix",
+            "info": {
+                "key": f"official/usenix/{slug}/{presentation_id}",
+                "title": title,
+                "abstract": abstract,
+                "year": year,
+                "venue": venue_name,
+                "type": "Conference and Workshop Papers",
+                "url": url,
+            },
+        }
+    return list(records.values())
+
+
+def fetch_official_source(
+    source_type: str, config_json: str, year: int, venue_name: str
+) -> list[dict[str, object]]:
+    config = json.loads(config_json)
+    if source_type == "usenix":
+        return fetch_usenix(config, year, venue_name)
+    raise ValueError(f"unsupported official source type: {source_type}")
+
+
 def fetch_dblp(
     dblp_key: str, venue_type: str, year: int | None, page_delay: float = 1.0
 ) -> list[dict[str, object]]:
@@ -607,13 +737,66 @@ def store_records(
         title = clean_title(info.get("title"))
         if not key or not title:
             continue
+        metadata_source = str(record.get("_source") or "dblp")
         year_text = str(info.get("year") or "")
         year = int(year_text) if year_text.isdigit() else None
+        existing_key = connection.execute(
+            "SELECT id FROM paper WHERE dblp_record_key=?", (key,)
+        ).fetchone()
+        if metadata_source.startswith("official:") and not existing_key:
+            existing_title = connection.execute(
+                """SELECT p.id, p.metadata_source
+                   FROM paper p
+                   JOIN paper_venue pv ON pv.paper_id=p.id
+                   WHERE pv.venue_id=? AND p.year IS ?
+                     AND lower(rtrim(p.title, '. '))=lower(rtrim(?, '. '))
+                   LIMIT 1""",
+                (venue_id, year, title),
+            ).fetchone()
+            if existing_title:
+                sources = set(str(existing_title["metadata_source"]).split("+"))
+                sources.add(metadata_source)
+                connection.execute(
+                    """UPDATE paper
+                       SET abstract=coalesce(abstract, ?),
+                           metadata_source=?, fetched_at=?
+                       WHERE id=?""",
+                    (
+                        clean_title(info.get("abstract")) or None,
+                        "+".join(sorted(sources)), now, existing_title["id"],
+                    ),
+                )
+                connection.execute(
+                    """INSERT OR IGNORE INTO paper_venue(paper_id, venue_id)
+                       VALUES (?, ?)""",
+                    (existing_title["id"], venue_id),
+                )
+                count += 1
+                continue
+        if metadata_source == "dblp" and not connection.execute(
+            "SELECT 1 FROM paper WHERE dblp_record_key=?", (key,)
+        ).fetchone():
+            official_match = connection.execute(
+                """SELECT p.id
+                   FROM paper p
+                   JOIN paper_venue pv ON pv.paper_id=p.id
+                   WHERE pv.venue_id=? AND p.year IS ?
+                     AND p.metadata_source LIKE 'official:%'
+                     AND lower(rtrim(p.title, '. '))=lower(rtrim(?, '. '))
+                   LIMIT 1""",
+                (venue_id, year, title),
+            ).fetchone()
+            if official_match:
+                connection.execute(
+                    "UPDATE paper SET dblp_record_key=? WHERE id=?",
+                    (key, official_match["id"]),
+                )
         connection.execute(
             """INSERT INTO paper(
                    dblp_record_key, title, abstract, year, venue_text,
-                   publication_type, authors_json, doi, url, fetched_at
-               ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                   publication_type, authors_json, doi, url, metadata_source,
+                   fetched_at
+               ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                ON CONFLICT(dblp_record_key) DO UPDATE SET
                  title=excluded.title,
                  abstract=coalesce(excluded.abstract, paper.abstract),
@@ -621,13 +804,14 @@ def store_records(
                  venue_text=excluded.venue_text,
                  publication_type=excluded.publication_type,
                  authors_json=excluded.authors_json, doi=excluded.doi,
-                 url=excluded.url, fetched_at=excluded.fetched_at""",
+                 url=excluded.url, metadata_source=excluded.metadata_source,
+                 fetched_at=excluded.fetched_at""",
             (
                 key, title, clean_title(info.get("abstract")) or None,
                 year, scalar_text(info.get("venue")), scalar_text(info.get("type")),
                 json.dumps(author_names(info), ensure_ascii=False),
                 first_text(info.get("doi")),
-                first_text(info.get("url") or info.get("ee")), now,
+                first_text(info.get("url") or info.get("ee")), metadata_source, now,
             ),
         )
         paper_id = connection.execute(
@@ -660,6 +844,7 @@ def sync_venue(
             )
         ]
         records_by_key: dict[str, dict[str, object]] = {}
+        metadata_sources = ["dblp"]
         for stream_key in stream_keys:
             for record in fetch_dblp(
                 stream_key, venue["type"], year, page_delay=page_delay
@@ -667,12 +852,53 @@ def sync_venue(
                 info = record.get("info", {})
                 record_key = str(info.get("key") if isinstance(info, dict) else "")
                 records_by_key[record_key or str(record.get("@id"))] = record
+        dblp_was_empty = not records_by_key
+        if year is not None:
+            official_sources = connection.execute(
+                """SELECT source_type, config_json
+                   FROM venue_official_source WHERE venue_id=?
+                   ORDER BY source_type, config_json""",
+                (venue["id"],),
+            ).fetchall()
+            for source in official_sources:
+                official_records = fetch_official_source(
+                    source["source_type"], source["config_json"], year,
+                    venue["short_name"] or venue["name"],
+                )
+                metadata_sources.append(f"official:{source['source_type']}")
+                for record in official_records:
+                    info = record.get("info", {})
+                    record_key = str(
+                        info.get("key") if isinstance(info, dict) else ""
+                    )
+                    records_by_key[record_key or str(record.get("@id"))] = record
+                print(
+                    f"{venue['short_name'] or venue['name']} {year}: "
+                    f"{'DBLP empty; ' if dblp_was_empty else ''}"
+                    f"{source['source_type']} official check returned "
+                    f"{len(official_records)}",
+                    file=sys.stderr,
+                )
         records = list(records_by_key.values())
+        source_label = "+".join(metadata_sources)
         with connection:
-            count = store_records(connection, venue["id"], records)
+            store_records(connection, venue["id"], records)
+            if year is None:
+                count = connection.execute(
+                    "SELECT count(*) FROM paper_venue WHERE venue_id=?",
+                    (venue["id"],),
+                ).fetchone()[0]
+            else:
+                count = connection.execute(
+                    """SELECT count(*) FROM paper p
+                       JOIN paper_venue pv ON pv.paper_id=p.id
+                       WHERE pv.venue_id=? AND p.year=?""",
+                    (venue["id"], year),
+                ).fetchone()[0]
             connection.execute(
-                "UPDATE sync_run SET finished_at=?, status='ok', fetched_count=? WHERE id=?",
-                (datetime.now(timezone.utc).isoformat(), count, run_id),
+                """UPDATE sync_run SET finished_at=?, status='ok', fetched_count=?,
+                          metadata_source=? WHERE id=?""",
+                (datetime.now(timezone.utc).isoformat(), count, source_label, run_id),
             )
         return count
     except Exception as error:
@@ -682,6 +908,17 @@ def sync_venue(
                 (datetime.now(timezone.utc).isoformat(), str(error), run_id),
             )
         raise
+
+
+def has_reusable_sync(
+    connection: sqlite3.Connection, venue_id: str, year: int | None
+) -> bool:
+    return bool(connection.execute(
+        """SELECT 1 FROM sync_run
+           WHERE venue_id=? AND year IS ? AND status='ok'
+             AND fetched_count>0 LIMIT 1""",
+        (venue_id, year),
+    ).fetchone())
 
 
 def paper_query(connection: sqlite3.Connection, args: argparse.Namespace) -> list[sqlite3.Row]:
@@ -1045,22 +1282,25 @@ def main() -> int:
         )
     elif args.command == "sync":
         matched_venues = select_venues(connection, args)
-        skipped = [row for row in matched_venues if not row["dblp_key"]]
-        venues = [row for row in matched_venues if row["dblp_key"]]
+        skipped = [
+            row for row in matched_venues
+            if not row["dblp_key"] and not connection.execute(
+                "SELECT 1 FROM venue_official_source WHERE venue_id=? LIMIT 1",
+                (row["id"],),
+            ).fetchone()
+        ]
+        skipped_ids = {row["id"] for row in skipped}
+        venues = [row for row in matched_venues if row["id"] not in skipped_ids]
         for venue in skipped:
             label = venue["short_name"] or venue["name"]
-            print(f"SKIP {label}: no DBLP stream in the CCF catalog", file=sys.stderr)
+            print(f"SKIP {label}: no configured metadata source", file=sys.stderr)
         year = None if args.all_years else args.year
         reused_cached = 0
         if args.reuse_cache:
             before = len(venues)
             venues = [
                 venue for venue in venues
-                if not connection.execute(
-                    """SELECT 1 FROM sync_run
-                       WHERE venue_id=? AND year IS ? AND status='ok' LIMIT 1""",
-                    (venue["id"], year),
-                ).fetchone()
+                if not has_reusable_sync(connection, venue["id"], year)
             ]
             reused_cached = before - len(venues)
         if args.max_venues is not None:

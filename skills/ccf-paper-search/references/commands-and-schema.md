@@ -25,8 +25,14 @@ python3 search/paper_db.py sync --category DS --rank A --type conference --year 
 python3 search/paper_db.py papers --category DS --rank A --year 2025 --format titles --limit 0
 ```
 
-`sync` skips successful `venue + year` runs by default. Add `--refresh` only for
-an intentional re-fetch; `papers` and `semantic-filter` always query local data.
+`sync` skips successful non-empty `venue + year` runs by default. Zero-paper runs
+are retried and execute DBLP followed by configured official-site fallbacks. Add
+`--refresh` only for an intentional re-fetch of a non-empty cache; `papers` and
+`semantic-filter` always query local data.
+
+During a fresh sync, a configured official adapter is checked even when DBLP is
+non-empty, allowing official abstracts to enrich matching records. Matching uses
+normalized title, venue, and year so the two sources do not create duplicates.
 
 Topic screening uses cached papers; it does not implicitly sync them:
 
@@ -65,9 +71,10 @@ chat-completions or messages request/response format.
 
 - `category`, `venue`, and `classification` contain the CCF catalog.
 - `venue_stream` maps renamed or merged venues to one or more DBLP streams.
+- `venue_official_source` stores first-party fallback adapter configurations.
 - `paper` stores deduplicated metadata, titles, and optional abstracts.
 - `paper_venue` maps papers to catalog venues.
-- `sync_run` records DBLP update attempts.
+- `sync_run` records update attempts, counts, and the metadata sources used.
 - `semantic_run` stores topic, model, filters, threshold, progress, and status.
 - `semantic_result` stores relevance, score, reason, and the input fingerprint
   used for safe model-result cache reuse.

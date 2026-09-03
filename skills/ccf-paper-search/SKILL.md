@@ -16,8 +16,10 @@ lists or query SQLite manually unless the CLI cannot express the request. Resolv
    matching venues with `venues`. Combine `--category`, `--rank`, `--type`, and
    `--venue` rather than filtering command output by hand.
 3. If the requested papers are not cached, run `sync` with an explicit `--year`.
-   `sync` reuses successful venue/year cache entries by default; use `--refresh`
-   only when the user asks to update already cached data.
+   `sync` reuses successful non-empty venue/year cache entries by default; use
+   `--refresh` only when the user asks to update already cached data. Never treat
+   an `ok` run with `fetched_count=0` as authoritative: the CLI must retry DBLP
+   and then any configured official-site fallback on the next sync.
    Use `--all-years` only when the user clearly requests historical coverage;
    direction-wide history can be large and should not be inferred from “find
    papers about a topic.”
@@ -28,7 +30,11 @@ lists or query SQLite manually unless the CLI cannot express the request. Resolv
    making the candidate scope visible. Retain the default candidate cap unless
    the user requests broader screening.
 
-Both network stages cache by default. `sync` reuses successful venue/year pulls.
+Both network stages cache by default. `sync` reuses successful non-empty
+venue/year pulls. If DBLP is empty, it checks configured official adapters (for
+example, USENIX technical-session pages) before recording the result. On a fresh
+sync, configured official sources also enrich matching DBLP records with
+abstracts and are merged by normalized title rather than inserted as duplicates.
 `semantic-filter` checkpoints batches and reuses evaluations when the model,
 topic, title, and abstract fingerprint match. Use `--refresh` or
 `--refresh-semantic` only when the user explicitly needs fresh data or scoring.

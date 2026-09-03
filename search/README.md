@@ -72,12 +72,22 @@ substantial load on DBLP. `--max-venues 1` is useful for a smoke test.
 
 The synchronizer is idempotent: DBLP record keys are upserted, and papers may be
 linked to more than one catalog classification without duplicate paper rows.
-Successful `venue + year` syncs are reused by default, so repeating the same
-query does not call DBLP again. Pass `sync --refresh` only when a forced refresh
-is intended.
+Successful, non-empty `venue + year` syncs are reused by default, so repeating
+the same query does not call its metadata sources again. A zero-paper run is
+never treated as authoritative: the next sync repeats the complete DBLP and
+official-source fallback chain. Pass `sync --refresh` only when a forced refresh
+of a non-empty cache is intended.
 Failed venue pulls are recorded in `sync_run` and do not roll back successful
 venues. A venue without a usable DBLP stream is reported as skipped rather than
 silently treated as an empty venue.
+
+For a venue with a configured official adapter, every fresh sync checks the
+official conference site after DBLP. This both fills an empty DBLP year and
+enriches existing DBLP records with official abstracts. The catalog currently
+enables the USENIX adapter for FAST, NSDI, OSDI, and USENIX Security. It parses
+their year-specific technical-session pages, including titles, abstracts, and
+official paper URLs. Official records are tagged by source and reconciled by
+normalized title, so later DBLP publication does not duplicate them.
 
 All 190 conferences and 144 of the 148 journals have DBLP streams. The four
 cataloged exceptions are BCRA, Cognition, JASA, and JSLHR; they remain queryable
@@ -141,6 +151,7 @@ screening without exporting and re-importing IDs.
 ```text
 category 1---* classification *---1 venue
                                       | 1---* venue_stream
+                                      | 1---* venue_official_source
                                       |
                                       *
                                   paper_venue *---1 paper
@@ -152,9 +163,10 @@ Useful tables are:
 - `venue`: one row per unique conference or journal.
 - `classification`: CCF direction and A/B rank for a venue.
 - `venue_stream`: one or more DBLP streams for renamed or merged venues.
+- `venue_official_source`: configured first-party fallback adapters.
 - `paper`: deduplicated DBLP paper metadata and title.
 - `paper_venue`: paper-to-venue links.
-- `sync_run`: update history, counts, and errors.
+- `sync_run`: update history, source, counts, and errors.
 - `semantic_run` and `semantic_result`: reproducible topic-screening results.
 
 You can also query the database directly:

@@ -12,6 +12,7 @@ topic='AI or LLM agents used to operate, optimize, debug, configure, tune, manag
 groups=(
   agent copilot 'autonomous system' 'automated system' 'system automation'
   autonomic self-managing self-healing self-driving self-configur self-optimi autotun
+  'AI-driven' 'AI driven' 'generative file system'
 )
 contexts=(
   system database kernel compiler cloud network debug optimiz configur tun operat

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "ccf_catalog_version": 2026,
   "source": "https://www.ccf.org.cn/Academic_Evaluation/By_category/",
   "source_snapshot": "https://www.ccf.org.cn/ccf/contentcore/resource/download?ID=112CF3BF7E1140ACEB271ADAED12A67ADFABB8FF099E40C2759502A85C8A281F",
@@ -939,6 +939,12 @@
       "dblp_key": "fast",
       "dblp_keys": [
         "fast"
+      ],
+      "official_sources": [
+        {
+          "type": "usenix",
+          "conference_slug": "fast{yy}"
+        }
       ],
       "url": "http://dblp.uni-trier.de/db/conf/fast/",
       "classifications": [
@@ -2234,6 +2240,12 @@
       "dblp_keys": [
         "nsdi"
       ],
+      "official_sources": [
+        {
+          "type": "usenix",
+          "conference_slug": "nsdi{yy}"
+        }
+      ],
       "url": "http://dblp.uni-trier.de/db/conf/nsdi/",
       "classifications": [
         {
@@ -2267,6 +2279,12 @@
       "dblp_key": "osdi",
       "dblp_keys": [
         "osdi"
+      ],
+      "official_sources": [
+        {
+          "type": "usenix",
+          "conference_slug": "osdi{yy}"
+        }
       ],
       "url": "http://dblp.uni-trier.de/db/conf/osdi/",
       "classifications": [
@@ -3085,6 +3103,12 @@
       "dblp_key": "uss",
       "dblp_keys": [
         "uss"
+      ],
+      "official_sources": [
+        {
+          "type": "usenix",
+          "conference_slug": "usenixsecurity{yy}"
+        }
       ],
       "url": "http://dblp.uni-trier.de/db/conf/uss/",
       "classifications": [
