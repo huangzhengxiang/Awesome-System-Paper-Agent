@@ -1,0 +1,3 @@
+[submodule "vis/PP-Schedule-Visualization"]
+	path = vis/PP-Schedule-Visualization
+	url = https://github.com/Victarry/PP-Schedule-Visualization.git

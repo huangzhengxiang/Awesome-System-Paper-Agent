@@ -4,3 +4,4 @@ Can system publication be easy?
 ## Collections
 
 - [Search: CCF A/B paper database](search/README.md)
+- [Visualization: pipeline parallelism schedules](vis/README.md)

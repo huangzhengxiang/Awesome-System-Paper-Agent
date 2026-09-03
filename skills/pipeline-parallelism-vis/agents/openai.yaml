@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pipeline Parallelism Visualizer"
+  short_description: "Render and compare pipeline training schedules"
+  default_prompt: "Use $pipeline-parallelism-vis to visualize and compare a multi-stage pipeline-parallel schedule."

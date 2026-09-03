@@ -5,3 +5,6 @@ AGENTS.md
 CLAUDE.md
 __pycache__/
 *.py[cod]
+
+# Local rendered galleries and visualization previews
+/vis/.preview/
