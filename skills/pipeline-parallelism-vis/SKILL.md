@@ -23,7 +23,17 @@ copy its simulator into the parent repository.
    and the upstream asset paths assume that working directory.
 4. Use `uv run app.py` for interactive exploration. Use
    `uv run python main.py key=value ...` when parameters should be reproducible.
-5. Report the selected strategy, devices, stages, microbatches (`num_batches`),
+5. For a readable static artifact, run `<repo>/vis/render_pipeline.py` with the
+   Python environment that provides the upstream dependencies. Adjust
+   `--label-font-size`, `--axis-font-size`, `--legend-font-size`,
+   `--title-font-size`, and `--stage-gap` when requested. Prefer SVG for papers
+   and PNG for quick previews.
+6. For a measured MTK PD rebuild/load/execute trace, use
+   `<repo>/vis/render_pd_trace.py` on the runner log. Distinguish durations read
+   directly from the log from start positions reconstructed from pipeline
+   dependencies, and put that distinction in the figure note. Do not substitute
+   the training-schedule simulator for measured PD data.
+7. Report the selected strategy, devices, stages, microbatches (`num_batches`),
    operation costs, P2P latency, and the local dashboard URL.
 
 For ordinary N-stage 1F1B, set `num_devices=N` and `num_stages=N`. This covers
